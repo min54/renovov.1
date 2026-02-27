@@ -38,6 +38,15 @@
 <body class="bg-white text-slate-800 antialiased selection:bg-violet-200 selection:text-violet-900">
   <div id="root"></div>
   <script type="module" src="/index.tsx"></script>
+
+  <!-- Netlify Forms 감지용 숨김 폼 -->
+  <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+    <input type="text" name="name" />
+    <input type="email" name="email" />
+    <input type="tel" name="phone" />
+    <select name="service"><option>선택</option></select>
+    <textarea name="message"></textarea>
+  </form>
 </body>
 
 </html>

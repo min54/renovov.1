@@ -1238,9 +1238,12 @@ export const translations = {
             formTitle: '빠른 예약 신청',
             namePlaceholder: '이름',
             emailPlaceholder: '이메일',
+            phonePlaceholder: '전화번호 (선택)',
             selectPlaceholder: '관심 시술 선택',
             messagePlaceholder: '문의 내용',
-            submitBtn: '신청하기'
+            submitBtn: '신청하기',
+            successTitle: '신청 완료!',
+            successMsg: '빠른 시일 내에 연락드리겠습니다.'
         },
         serviceGroups: [
             { label: 'Skin Booster', labelNative: '스킨 부스터' },
@@ -2526,9 +2529,12 @@ export const translations = {
             formTitle: 'Quick Reservation',
             namePlaceholder: 'Name',
             emailPlaceholder: 'Email',
+            phonePlaceholder: 'Phone (optional)',
             selectPlaceholder: 'Select Treatment',
             messagePlaceholder: 'Inquiry',
-            submitBtn: 'Submit'
+            submitBtn: 'Submit',
+            successTitle: 'Thank you!',
+            successMsg: 'We will contact you shortly.'
         },
         serviceGroups: [
             { label: 'Skin Booster', labelNative: 'Skin Booster' },
@@ -3814,9 +3820,12 @@ export const translations = {
             formTitle: '簡単予約申請',
             namePlaceholder: 'お名前',
             emailPlaceholder: 'メール',
+            phonePlaceholder: '電話番号（任意）',
             selectPlaceholder: 'ご希望の施術',
             messagePlaceholder: 'お問い合わせ内容',
-            submitBtn: '申請する'
+            submitBtn: '申請する',
+            successTitle: '申請完了！',
+            successMsg: '折り返しご連絡いたします。'
         },
         serviceGroups: [
             { label: 'Skin Booster', labelNative: 'スキンブースター' },

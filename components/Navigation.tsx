@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Globe, Lock, ChevronDown } from 'lucide-react';
+import { Menu, X, Globe, Lock, ChevronDown, Phone } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
 
 interface NavigationProps {
@@ -109,12 +109,22 @@ const Navigation: React.FC<NavigationProps> = ({ onOpenAdmin, onTreatmentSelect,
           </a>
         </div>
 
-        <button
-          className="text-white"
-          onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-        >
-          {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
-        </button>
+        {/* 모바일: 전화 + 햄버거 */}
+        <div className="flex md:hidden items-center gap-2">
+          <a
+            href="tel:0231414282"
+            className="flex items-center gap-1.5 bg-violet-500 hover:bg-violet-600 text-white px-3 py-1.5 rounded-full text-xs font-bold shadow-md active:scale-95 transition-all"
+          >
+            <Phone size={13} />
+            전화
+          </a>
+          <button
+            className="text-white"
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+          >
+            {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
+        </div>
       </div>
 
       {/* Mobile Menu Overlay */}

@@ -14,7 +14,6 @@ import Footer from './components/Footer';
 import YoutubeSection from './components/YoutubeSection';
 import BlogSection from './components/BlogSection';
 import Admin from './components/Admin';
-import { Phone } from 'lucide-react';
 
 function App() {
   useEffect(() => {
@@ -76,14 +75,6 @@ function App() {
 
         {showAdmin && <Admin onClose={() => setShowAdmin(false)} />}
 
-        {/* 모바일 전용 하단 고정 전화 버튼 */}
-        <a
-          href="tel:023141-4282"
-          className="md:hidden fixed bottom-6 right-6 z-50 flex items-center gap-2 bg-violet-500 hover:bg-violet-600 text-white px-5 py-3.5 rounded-full shadow-lg shadow-violet-500/40 transition-all active:scale-95"
-        >
-          <Phone size={18} />
-          <span className="text-sm font-bold tracking-wide">전화 상담</span>
-        </a>
       </div>
     </LanguageProvider>
   );

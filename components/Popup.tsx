@@ -1,7 +1,12 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react';
 
+const POPUP_WIDTH_DESKTOP = 300;
+const POPUP_WIDTH_MOBILE = 200;
+const MARGIN = 24;
+
 const Popup: React.FC = () => {
   const [visible, setVisible] = useState(false);
+  const [appear, setAppear] = useState(false);
   const [image, setImage] = useState('');
   const [dontShow, setDontShow] = useState(false);
   const [pos, setPos] = useState({ x: 0, y: 0 });
@@ -11,30 +16,32 @@ const Popup: React.FC = () => {
   const startOffset = useRef({ x: 0, y: 0 });
   const popupRef = useRef<HTMLDivElement>(null);
 
+  const isMobile = () => window.innerWidth < 768;
+
   useEffect(() => {
     const active = localStorage.getItem('popup_active') === 'true';
     const img = localStorage.getItem('popup_image') || '';
     const hideUntil = localStorage.getItem('popup_hide_until');
 
     if (active && img) {
-      if (hideUntil && new Date().getTime() < parseInt(hideUntil)) {
-        return;
-      }
+      if (hideUntil && new Date().getTime() < parseInt(hideUntil)) return;
       setImage(img);
       setVisible(true);
     }
   }, []);
 
-  // 팝업 중앙 초기 위치 설정
+  // 우측 초기 위치 설정 후 fade-in
   useEffect(() => {
-    if (visible && !initialized && popupRef.current) {
-      const w = popupRef.current.offsetWidth || 320;
-      const h = popupRef.current.offsetHeight || 400;
+    if (visible && !initialized) {
+      const w = isMobile() ? POPUP_WIDTH_MOBILE : POPUP_WIDTH_DESKTOP;
+      const h = popupRef.current?.offsetHeight || 350;
       setPos({
-        x: Math.max(0, (window.innerWidth - w) / 2),
-        y: Math.max(0, (window.innerHeight - h) / 2),
+        x: window.innerWidth - w - MARGIN,
+        y: Math.max(MARGIN, (window.innerHeight - h) / 2),
       });
       setInitialized(true);
+      // 살짝 딜레이 후 appear → 부드러운 등장
+      setTimeout(() => setAppear(true), 50);
     }
   }, [visible, initialized]);
 
@@ -43,7 +50,8 @@ const Popup: React.FC = () => {
       const tomorrow = new Date().getTime() + 24 * 60 * 60 * 1000;
       localStorage.setItem('popup_hide_until', String(tomorrow));
     }
-    setVisible(false);
+    setAppear(false);
+    setTimeout(() => setVisible(false), 300);
   };
 
   // 마우스 드래그
@@ -55,33 +63,25 @@ const Popup: React.FC = () => {
 
   const onMouseMove = useCallback((e: MouseEvent) => {
     if (!dragging.current) return;
-    const newX = e.clientX - startOffset.current.x;
-    const newY = e.clientY - startOffset.current.y;
-    setPos({ x: newX, y: newY });
+    setPos({ x: e.clientX - startOffset.current.x, y: e.clientY - startOffset.current.y });
   }, []);
 
-  const onMouseUp = useCallback(() => {
-    dragging.current = false;
-  }, []);
+  const onMouseUp = useCallback(() => { dragging.current = false; }, []);
 
-  // 터치 드래그 (모바일)
+  // 터치 드래그
   const onTouchStart = (e: React.TouchEvent) => {
-    const touch = e.touches[0];
+    const t = e.touches[0];
     dragging.current = true;
-    startOffset.current = { x: touch.clientX - pos.x, y: touch.clientY - pos.y };
+    startOffset.current = { x: t.clientX - pos.x, y: t.clientY - pos.y };
   };
 
   const onTouchMove = useCallback((e: TouchEvent) => {
     if (!dragging.current) return;
-    const touch = e.touches[0];
-    const newX = touch.clientX - startOffset.current.x;
-    const newY = touch.clientY - startOffset.current.y;
-    setPos({ x: newX, y: newY });
+    const t = e.touches[0];
+    setPos({ x: t.clientX - startOffset.current.x, y: t.clientY - startOffset.current.y });
   }, []);
 
-  const onTouchEnd = useCallback(() => {
-    dragging.current = false;
-  }, []);
+  const onTouchEnd = useCallback(() => { dragging.current = false; }, []);
 
   useEffect(() => {
     window.addEventListener('mousemove', onMouseMove);
@@ -98,6 +98,8 @@ const Popup: React.FC = () => {
 
   if (!visible || !image) return null;
 
+  const popupWidth = isMobile() ? POPUP_WIDTH_MOBILE : POPUP_WIDTH_DESKTOP;
+
   return (
     <div
       ref={popupRef}
@@ -105,38 +107,45 @@ const Popup: React.FC = () => {
       style={{
         left: pos.x,
         top: pos.y,
-        width: 'min(320px, 90vw)',
+        width: popupWidth,
+        opacity: appear ? 1 : 0,
+        transform: appear ? 'translateY(0) scale(1)' : 'translateY(16px) scale(0.96)',
+        transition: 'opacity 0.35s ease, transform 0.35s ease',
         cursor: dragging.current ? 'grabbing' : 'auto',
       }}
     >
-      {/* 드래그 핸들 */}
+      <img
+        src={image}
+        alt="공지 팝업"
+        className="w-full object-contain cursor-grab active:cursor-grabbing select-none"
+        onMouseDown={onMouseDown}
+        onTouchStart={onTouchStart}
+        draggable={false}
+      />
+
       <div
-        className="flex items-center justify-center py-2 bg-slate-800 cursor-grab active:cursor-grabbing select-none"
+        className="flex items-center justify-between px-3 py-2.5 bg-gray-50 border-t border-gray-100 cursor-grab active:cursor-grabbing"
         onMouseDown={onMouseDown}
         onTouchStart={onTouchStart}
       >
-        <div className="flex gap-1">
-          <span className="w-6 h-0.5 bg-white/40 rounded-full" />
-          <span className="w-6 h-0.5 bg-white/40 rounded-full" />
-          <span className="w-6 h-0.5 bg-white/40 rounded-full" />
-        </div>
-      </div>
-
-      <img src={image} alt="공지 팝업" className="w-full object-contain" />
-
-      <div className="flex items-center justify-between px-4 py-3 bg-gray-50 border-t border-gray-100">
-        <label className="flex items-center gap-2 text-xs text-gray-500 cursor-pointer select-none">
+        <label
+          className="flex items-center gap-1.5 text-[11px] text-gray-500 cursor-pointer select-none"
+          onMouseDown={(e) => e.stopPropagation()}
+          onTouchStart={(e) => e.stopPropagation()}
+        >
           <input
             type="checkbox"
             checked={dontShow}
             onChange={(e) => setDontShow(e.target.checked)}
-            className="w-3.5 h-3.5 accent-violet-500"
+            className="w-3 h-3 accent-violet-500"
           />
           이 창을 하루동안 열지 않습니다
         </label>
         <button
           onClick={handleClose}
-          className="text-xs text-gray-500 hover:text-gray-800 font-semibold transition-colors"
+          onMouseDown={(e) => e.stopPropagation()}
+          onTouchStart={(e) => e.stopPropagation()}
+          className="text-[11px] text-gray-500 hover:text-gray-800 font-semibold transition-colors cursor-pointer ml-2 shrink-0"
         >
           닫기
         </button>

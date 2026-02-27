@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react';
-import { Upload, Eye, EyeOff, Trash2, LogOut, Image, MessageSquare, LayoutDashboard } from 'lucide-react';
+import { Upload, Eye, EyeOff, Trash2, LogOut, Image, MessageSquare, LayoutDashboard, ExternalLink } from 'lucide-react';
 
 const ADMIN_ID = '1';
 const ADMIN_PW = '1';
@@ -138,7 +138,14 @@ const AdminPage: React.FC = () => {
             </button>
           ))}
         </nav>
-        <div className="px-3 py-4 border-t border-white/10">
+        <div className="px-3 py-4 border-t border-white/10 space-y-1">
+          <a
+            href="/"
+            className="w-full flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm text-white/40 hover:bg-white/10 hover:text-white transition-all"
+          >
+            <ExternalLink size={16} />
+            사이트 보기
+          </a>
           <button
             onClick={handleLogout}
             className="w-full flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm text-white/40 hover:bg-white/10 hover:text-white transition-all"

@@ -98,9 +98,9 @@ const Navigation: React.FC<NavigationProps> = ({ onOpenAdmin, onTreatmentSelect,
           <a href="#reservation" className={`${isScrolled ? 'bg-white text-violet-600' : 'bg-violet-600 text-white'} px-5 py-2 rounded-full text-xs font-bold hover:opacity-90 transition-all shadow-lg`}>
             {t.nav.book}
           </a>
-          <button
-            onClick={onOpenAdmin}
-            className="w-5 h-5 opacity-0 hover:opacity-0 cursor-default"
+          <a
+            href="/admin"
+            className="w-5 h-5 opacity-0 cursor-default"
             aria-hidden="true"
             tabIndex={-1}
           />

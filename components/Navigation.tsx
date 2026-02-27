@@ -1,15 +1,14 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Globe, Lock, ChevronDown, Phone } from 'lucide-react';
+import { Menu, X, ChevronDown, Phone } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
 
 interface NavigationProps {
-  onOpenAdmin: () => void;
   onTreatmentSelect: (id: string) => void;
   onNavigateHome: () => void;
   onNavigateLocation: () => void;
 }
 
-const Navigation: React.FC<NavigationProps> = ({ onOpenAdmin, onTreatmentSelect, onNavigateHome, onNavigateLocation }) => {
+const Navigation: React.FC<NavigationProps> = ({ onTreatmentSelect, onNavigateHome, onNavigateLocation }) => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [servicesDropdownOpen, setServicesDropdownOpen] = useState(false);
@@ -94,15 +93,6 @@ const Navigation: React.FC<NavigationProps> = ({ onOpenAdmin, onTreatmentSelect,
               </button>
             ))}
           </div>
-
-          <button
-            onClick={onOpenAdmin}
-            className="p-1.5 opacity-0 hover:opacity-0 cursor-default"
-            title=""
-            aria-hidden="true"
-          >
-            <Lock size={14} />
-          </button>
 
           <a href="#reservation" className={`${isScrolled ? 'bg-white text-violet-600' : 'bg-violet-600 text-white'} px-5 py-2 rounded-full text-xs font-bold hover:opacity-90 transition-all shadow-lg`}>
             {t.nav.book}
@@ -197,9 +187,6 @@ const Navigation: React.FC<NavigationProps> = ({ onOpenAdmin, onTreatmentSelect,
               {t.nav.book}
             </a>
           </div>
-
-          {/* 히든 어드민 */}
-          <button onClick={() => { setMobileMenuOpen(false); onOpenAdmin(); }} className="opacity-0 h-0 overflow-hidden" aria-hidden="true" />
 
         </div>
       )}

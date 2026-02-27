@@ -13,14 +13,11 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import YoutubeSection from './components/YoutubeSection';
 import BlogSection from './components/BlogSection';
-import Admin from './components/Admin';
-
 function App() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
-  const [showAdmin, setShowAdmin] = useState(false);
   const [activeTreatmentId, setActiveTreatmentId] = useState<string | null>(null);
   const [showLocation, setShowLocation] = useState(false);
 
@@ -45,7 +42,6 @@ function App() {
     <LanguageProvider>
       <div className="min-h-screen flex flex-col relative">
         <Navigation
-          onOpenAdmin={() => setShowAdmin(true)}
           onTreatmentSelect={handleTreatmentSelect}
           onNavigateHome={handleTreatmentBack}
           onNavigateLocation={handleShowLocation}
@@ -72,8 +68,6 @@ function App() {
         </main>
 
         {!activeTreatmentId && <Footer />}
-
-        {showAdmin && <Admin onClose={() => setShowAdmin(false)} />}
 
       </div>
     </LanguageProvider>

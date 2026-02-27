@@ -15,8 +15,14 @@ import YoutubeSection from './components/YoutubeSection';
 import BlogSection from './components/BlogSection';
 import Admin from './components/Admin';
 import Popup from './components/Popup';
+import AdminPage from './components/AdminPage';
 
 function App() {
+  // /admin 경로면 어드민 페이지 표시
+  if (window.location.pathname === '/admin') {
+    return <AdminPage />;
+  }
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);

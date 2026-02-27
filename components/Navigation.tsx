@@ -3,12 +3,13 @@ import { Menu, X, ChevronDown, Phone } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
 
 interface NavigationProps {
+  onOpenAdmin: () => void;
   onTreatmentSelect: (id: string) => void;
   onNavigateHome: () => void;
   onNavigateLocation: () => void;
 }
 
-const Navigation: React.FC<NavigationProps> = ({ onTreatmentSelect, onNavigateHome, onNavigateLocation }) => {
+const Navigation: React.FC<NavigationProps> = ({ onOpenAdmin, onTreatmentSelect, onNavigateHome, onNavigateLocation }) => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [servicesDropdownOpen, setServicesDropdownOpen] = useState(false);
@@ -97,6 +98,13 @@ const Navigation: React.FC<NavigationProps> = ({ onTreatmentSelect, onNavigateHo
           <a href="#reservation" className={`${isScrolled ? 'bg-white text-violet-600' : 'bg-violet-600 text-white'} px-5 py-2 rounded-full text-xs font-bold hover:opacity-90 transition-all shadow-lg`}>
             {t.nav.book}
           </a>
+          <button
+            onClick={onOpenAdmin}
+            className="w-5 h-5 opacity-0 hover:opacity-0 cursor-default"
+            aria-hidden="true"
+            tabIndex={-1}
+          />
+
         </div>
 
         {/* 모바일: 전화 + 햄버거 */}

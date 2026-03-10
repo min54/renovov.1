@@ -95,7 +95,7 @@ const Navigation: React.FC<NavigationProps> = ({ onOpenAdmin, onTreatmentSelect,
             ))}
           </div>
 
-          <a href="#reservation" className={`${isScrolled ? 'bg-white text-violet-600' : 'bg-violet-600 text-white'} px-5 py-2 rounded-full text-xs font-bold hover:opacity-90 transition-all shadow-lg`}>
+          <a href="#contact" className={`${isScrolled ? 'bg-white text-violet-600' : 'bg-violet-600 text-white'} px-5 py-2 rounded-full text-xs font-bold hover:opacity-90 transition-all shadow-lg`}>
             {t.nav.book}
           </a>
           <a
@@ -188,7 +188,7 @@ const Navigation: React.FC<NavigationProps> = ({ onOpenAdmin, onTreatmentSelect,
               {t.nav.contact}
             </button>
             <a
-              href="#reservation"
+              href="#contact"
               onClick={() => setMobileMenuOpen(false)}
               className="flex-1 py-3 rounded-2xl bg-violet-500 text-white text-sm font-bold text-center hover:bg-violet-600 transition-colors"
             >

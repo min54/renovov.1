@@ -15,6 +15,7 @@ import YoutubeSection from './components/YoutubeSection';
 import BlogSection from './components/BlogSection';
 import Popup from './components/Popup';
 import AdminPage from './components/AdminPage';
+import LineButton from './components/LineButton';
 
 function App() {
   // /admin 경로면 어드민 페이지 표시
@@ -79,6 +80,7 @@ function App() {
         {!activeTreatmentId && <Footer />}
 
         <Popup />
+        <LineButton />
 
       </div>
     </LanguageProvider>

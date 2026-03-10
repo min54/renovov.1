@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef, useCallback } from 'react';
 
 const POPUP_WIDTH_DESKTOP = 378;
 const POPUP_WIDTH_MOBILE = 252;
-const MARGIN = 24;
+const MARGIN = 272; // LINE 버튼(48px) + 간격(224px)
 
 const Popup: React.FC = () => {
   const [visible, setVisible] = useState(false);

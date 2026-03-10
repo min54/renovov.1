@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react';
 
-const POPUP_WIDTH_DESKTOP = 300;
-const POPUP_WIDTH_MOBILE = 200;
+const POPUP_WIDTH_DESKTOP = 378;
+const POPUP_WIDTH_MOBILE = 252;
 const MARGIN = 24;
 
 const Popup: React.FC = () => {
@@ -103,7 +103,7 @@ const Popup: React.FC = () => {
   return (
     <div
       ref={popupRef}
-      className="fixed z-[90] bg-white rounded-2xl overflow-hidden shadow-2xl"
+      className="fixed z-[90] bg-white overflow-hidden shadow-2xl"
       style={{
         left: pos.x,
         top: pos.y,

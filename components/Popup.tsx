@@ -4,6 +4,8 @@ const POPUP_WIDTH_DESKTOP = 378;
 const POPUP_WIDTH_MOBILE = 252;
 const MARGIN = 272; // LINE 버튼(48px) + 간격(224px)
 
+const IS_LOCAL = window.location.hostname === 'localhost';
+
 const Popup: React.FC = () => {
   const [visible, setVisible] = useState(false);
   const [appear, setAppear] = useState(false);
@@ -19,14 +21,28 @@ const Popup: React.FC = () => {
   const isMobile = () => window.innerWidth < 768;
 
   useEffect(() => {
-    const active = localStorage.getItem('popup_active') === 'true';
-    const img = localStorage.getItem('popup_image') || '';
     const hideUntil = localStorage.getItem('popup_hide_until');
+    if (hideUntil && new Date().getTime() < parseInt(hideUntil)) return;
 
-    if (active && img) {
-      if (hideUntil && new Date().getTime() < parseInt(hideUntil)) return;
-      setImage(img);
-      setVisible(true);
+    if (IS_LOCAL) {
+      // 로컬 개발: localStorage 사용
+      const active = localStorage.getItem('popup_active') === 'true';
+      const img = localStorage.getItem('popup_image') || '';
+      if (active && img) {
+        setImage(img);
+        setVisible(true);
+      }
+    } else {
+      // 프로덕션: 서버에서 팝업 데이터 가져오기
+      fetch('/.netlify/functions/popup-get')
+        .then((r) => r.json())
+        .then((data) => {
+          if (data.active && data.image) {
+            setImage(data.image);
+            setVisible(true);
+          }
+        })
+        .catch(() => {});
     }
   }, []);
 
@@ -40,7 +56,6 @@ const Popup: React.FC = () => {
         y: Math.max(MARGIN, (window.innerHeight - h) / 2),
       });
       setInitialized(true);
-      // 살짝 딜레이 후 appear → 부드러운 등장
       setTimeout(() => setAppear(true), 50);
     }
   }, [visible, initialized]);

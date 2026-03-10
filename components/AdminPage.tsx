@@ -3,6 +3,8 @@ import { Upload, Eye, EyeOff, Trash2, LogOut, Image, MessageSquare, LayoutDashbo
 
 const ADMIN_ID = '1';
 const ADMIN_PW = '1';
+const POPUP_TOKEN = 'renovo2024';
+const IS_LOCAL = window.location.hostname === 'localhost';
 
 type Section = 'dashboard' | 'popup' | 'inquiries';
 
@@ -35,33 +37,53 @@ const AdminPage: React.FC = () => {
     setPw('');
   };
 
+  const saveToServer = async (image: string, active: boolean) => {
+    if (IS_LOCAL) {
+      localStorage.setItem('popup_image', image);
+      localStorage.setItem('popup_active', String(active));
+      localStorage.removeItem('popup_hide_until');
+      return;
+    }
+    await fetch('/.netlify/functions/popup-set', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ token: POPUP_TOKEN, active, image }),
+    });
+  };
+
   const handleImageUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0];
     if (!file) return;
     const reader = new FileReader();
-    reader.onload = (ev) => {
+    reader.onload = async (ev) => {
       const dataUrl = ev.target?.result as string;
       setPopupImage(dataUrl);
-      localStorage.setItem('popup_image', dataUrl);
-      localStorage.setItem('popup_active', 'true');
-      localStorage.removeItem('popup_hide_until');
       setPopupActive(true);
+      await saveToServer(dataUrl, true);
     };
     reader.readAsDataURL(file);
   };
 
-  const togglePopup = () => {
+  const togglePopup = async () => {
     const newVal = !popupActive;
     setPopupActive(newVal);
-    localStorage.setItem('popup_active', String(newVal));
+    await saveToServer(popupImage, newVal);
   };
 
-  const deleteImage = () => {
+  const deleteImage = async () => {
     setPopupImage('');
-    localStorage.removeItem('popup_image');
-    localStorage.removeItem('popup_hide_until');
-    localStorage.setItem('popup_active', 'false');
     setPopupActive(false);
+    if (IS_LOCAL) {
+      localStorage.removeItem('popup_image');
+      localStorage.removeItem('popup_hide_until');
+      localStorage.setItem('popup_active', 'false');
+      return;
+    }
+    await fetch('/.netlify/functions/popup-delete', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ token: POPUP_TOKEN }),
+    });
   };
 
   /* ── 로그인 화면 ── */

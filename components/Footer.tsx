@@ -94,19 +94,28 @@ const Footer: React.FC = () => {
       </div>
 
       {/* 하단: 사업자 정보 */}
-      <div className="container mx-auto px-6 max-w-6xl py-6">
-        <div className="flex flex-col md:flex-row justify-between items-center gap-3 text-[11px] text-white/25">
-          <p className="font-medium tracking-wide">
-            &copy; {new Date().getFullYear()} {t.footer.copy}. All rights reserved.
-          </p>
-          <div className="flex flex-wrap justify-center md:justify-end gap-x-4 gap-y-1">
-            <span>{t.footer.rep}</span>
-            <span className="text-white/10">|</span>
-            <span>사업자등록번호: 849-10-01039</span>
-            <span className="text-white/10">|</span>
-            <span>TEL: 02)3141-4282~3</span>
-            <span className="text-white/10">|</span>
-            <span>FAX: 02)3141-4289</span>
+      <div className="border-t border-white/5">
+        <div className="container mx-auto px-6 max-w-6xl py-6">
+          <div className="flex flex-col gap-2.5 text-[11px] text-white/25">
+            <div className="flex flex-wrap gap-x-3 gap-y-1 items-center">
+              <span className="text-white/40 font-semibold">벨아미리노보의원</span>
+              <span className="text-white/10">|</span>
+              <span>대표자 : 박태훈</span>
+              <span className="text-white/10">|</span>
+              <span>사업자등록번호 : 849-10-01039</span>
+              <span className="text-white/10">|</span>
+              <span>TEL : 02) 3141-4282~3</span>
+              <span className="text-white/10">|</span>
+              <span>FAX : 02) 3141-4289</span>
+            </div>
+            <div className="flex flex-wrap gap-x-3 gap-y-1 items-center">
+              <span>서울특별시 마포구 양화로 176 동교동 와이즈파크 5층</span>
+              <span className="text-white/10">|</span>
+              <span>홍대입구역 8번 출구</span>
+            </div>
+            <p className="text-white/15 mt-1">
+              &copy; {new Date().getFullYear()} BELLE AMIE RENOVO. All rights reserved.
+            </p>
           </div>
         </div>
       </div>

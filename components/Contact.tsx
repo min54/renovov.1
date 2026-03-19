@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { MapPin, Phone, Mail, Clock, CheckCircle } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
 import FadeIn from './FadeIn';
+import { supabase } from '../services/supabase';
 
 const Contact: React.FC = () => {
   const { t } = useLanguage();
@@ -18,14 +19,15 @@ const Contact: React.FC = () => {
     e.preventDefault();
     setLoading(true);
     try {
-      await fetch('/', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: encode({ 'form-name': 'contact', ...form }),
-      });
+      await supabase.from('contact_submissions').insert([{
+        name: form.name,
+        email: form.email,
+        phone: form.phone,
+        service: form.service,
+        message: form.message,
+      }]);
       setSubmitted(true);
     } catch {
-      // 전송 실패해도 성공 표시 (Netlify가 처리)
       setSubmitted(true);
     } finally {
       setLoading(false);

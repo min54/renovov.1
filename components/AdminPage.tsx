@@ -1,12 +1,21 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { Upload, Eye, EyeOff, Trash2, LogOut, Image, MessageSquare, LayoutDashboard, ExternalLink } from 'lucide-react';
+import { supabase } from '../services/supabase';
 
 const ADMIN_ID = '1';
 const ADMIN_PW = '1';
-const POPUP_TOKEN = 'renovo2024';
-const IS_LOCAL = window.location.hostname === 'localhost';
 
 type Section = 'dashboard' | 'popup' | 'inquiries';
+
+interface Inquiry {
+  id: string;
+  name: string;
+  email: string;
+  phone: string;
+  service: string;
+  message: string;
+  created_at: string;
+}
 
 const AdminPage: React.FC = () => {
   const [loggedIn, setLoggedIn] = useState(() => sessionStorage.getItem('admin_auth') === 'true');
@@ -15,9 +24,43 @@ const AdminPage: React.FC = () => {
   const [error, setError] = useState('');
   const [section, setSection] = useState<Section>('dashboard');
 
-  const [popupImage, setPopupImage] = useState<string>(localStorage.getItem('popup_image') || '');
-  const [popupActive, setPopupActive] = useState(localStorage.getItem('popup_active') === 'true');
+  const [popupImage, setPopupImage] = useState('');
+  const [popupActive, setPopupActive] = useState(false);
+  const [popupLoading, setPopupLoading] = useState(false);
   const fileRef = useRef<HTMLInputElement>(null);
+
+  const [inquiries, setInquiries] = useState<Inquiry[]>([]);
+  const [inquiriesLoading, setInquiriesLoading] = useState(false);
+
+  // 팝업 설정 불러오기
+  useEffect(() => {
+    if (!loggedIn) return;
+    supabase
+      .from('popup_settings')
+      .select('active, image_url')
+      .eq('id', 1)
+      .single()
+      .then(({ data }) => {
+        if (data) {
+          setPopupImage(data.image_url || '');
+          setPopupActive(data.active || false);
+        }
+      });
+  }, [loggedIn]);
+
+  // 문의 내역 불러오기
+  useEffect(() => {
+    if (section !== 'inquiries') return;
+    setInquiriesLoading(true);
+    supabase
+      .from('contact_submissions')
+      .select('*')
+      .order('created_at', { ascending: false })
+      .then(({ data }) => {
+        setInquiries(data || []);
+        setInquiriesLoading(false);
+      });
+  }, [section]);
 
   const handleLogin = (e: React.FormEvent) => {
     e.preventDefault();
@@ -37,53 +80,54 @@ const AdminPage: React.FC = () => {
     setPw('');
   };
 
-  const saveToServer = async (image: string, active: boolean) => {
-    if (IS_LOCAL) {
-      localStorage.setItem('popup_image', image);
-      localStorage.setItem('popup_active', String(active));
-      localStorage.removeItem('popup_hide_until');
-      return;
-    }
-    await fetch('/.netlify/functions/popup-set', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ token: POPUP_TOKEN, active, image }),
-    });
+  const savePopup = async (imageUrl: string, active: boolean) => {
+    await supabase
+      .from('popup_settings')
+      .update({ active, image_url: imageUrl, updated_at: new Date().toISOString() })
+      .eq('id', 1);
   };
 
-  const handleImageUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const handleImageUpload = async (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0];
     if (!file) return;
-    const reader = new FileReader();
-    reader.onload = async (ev) => {
-      const dataUrl = ev.target?.result as string;
-      setPopupImage(dataUrl);
-      setPopupActive(true);
-      await saveToServer(dataUrl, true);
-    };
-    reader.readAsDataURL(file);
+    setPopupLoading(true);
+
+    const fileName = `popup_${Date.now()}.${file.name.split('.').pop()}`;
+    const { error: uploadError } = await supabase.storage
+      .from('popup-images')
+      .upload(fileName, file, { upsert: true });
+
+    if (uploadError) {
+      alert('이미지 업로드 실패: ' + uploadError.message);
+      setPopupLoading(false);
+      return;
+    }
+
+    const { data: { publicUrl } } = supabase.storage
+      .from('popup-images')
+      .getPublicUrl(fileName);
+
+    setPopupImage(publicUrl);
+    setPopupActive(true);
+    await savePopup(publicUrl, true);
+    setPopupLoading(false);
   };
 
   const togglePopup = async () => {
     const newVal = !popupActive;
     setPopupActive(newVal);
-    await saveToServer(popupImage, newVal);
+    await savePopup(popupImage, newVal);
   };
 
   const deleteImage = async () => {
+    setPopupLoading(true);
+    // 파일명 추출해서 스토리지에서도 삭제
+    const path = popupImage.split('/popup-images/')[1];
+    if (path) await supabase.storage.from('popup-images').remove([path]);
     setPopupImage('');
     setPopupActive(false);
-    if (IS_LOCAL) {
-      localStorage.removeItem('popup_image');
-      localStorage.removeItem('popup_hide_until');
-      localStorage.setItem('popup_active', 'false');
-      return;
-    }
-    await fetch('/.netlify/functions/popup-delete', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ token: POPUP_TOKEN }),
-    });
+    await savePopup('', false);
+    setPopupLoading(false);
   };
 
   /* ── 로그인 화면 ── */
@@ -209,8 +253,8 @@ const AdminPage: React.FC = () => {
                   </div>
                   <span className="font-semibold text-slate-700">문의 내역</span>
                 </div>
-                <p className="text-2xl font-bold text-slate-900">—</p>
-                <p className="text-xs text-slate-400 mt-1">추후 연동 예정</p>
+                <p className="text-2xl font-bold text-slate-900">{inquiries.length || '—'}</p>
+                <p className="text-xs text-slate-400 mt-1">전체 문의 수</p>
               </div>
             </div>
           </div>
@@ -247,7 +291,8 @@ const AdminPage: React.FC = () => {
                   />
                   <button
                     onClick={deleteImage}
-                    className="absolute top-2 right-2 bg-red-500 text-white rounded-full p-1.5 hover:bg-red-600 transition-colors shadow-md"
+                    disabled={popupLoading}
+                    className="absolute top-2 right-2 bg-red-500 text-white rounded-full p-1.5 hover:bg-red-600 transition-colors shadow-md disabled:opacity-50"
                   >
                     <Trash2 size={13} />
                   </button>
@@ -257,10 +302,13 @@ const AdminPage: React.FC = () => {
               <input ref={fileRef} type="file" accept="image/*" className="hidden" onChange={handleImageUpload} />
               <button
                 onClick={() => fileRef.current?.click()}
-                className="w-full border-2 border-dashed border-violet-200 rounded-xl py-8 flex flex-col items-center gap-2 text-violet-400 hover:border-violet-400 hover:bg-violet-50 transition-all"
+                disabled={popupLoading}
+                className="w-full border-2 border-dashed border-violet-200 rounded-xl py-8 flex flex-col items-center gap-2 text-violet-400 hover:border-violet-400 hover:bg-violet-50 transition-all disabled:opacity-50"
               >
                 <Upload size={22} />
-                <span className="text-sm font-semibold">{popupImage ? '이미지 교체하기' : '팝업 이미지 업로드'}</span>
+                <span className="text-sm font-semibold">
+                  {popupLoading ? '업로드 중...' : popupImage ? '이미지 교체하기' : '팝업 이미지 업로드'}
+                </span>
                 <span className="text-xs text-slate-400">JPG, PNG, GIF · 최대 5MB</span>
               </button>
 
@@ -275,11 +323,39 @@ const AdminPage: React.FC = () => {
         {section === 'inquiries' && (
           <div>
             <h2 className="text-xl font-bold text-slate-800 mb-6">문의 내역</h2>
-            <div className="bg-white rounded-2xl p-10 shadow-sm border border-slate-100 text-center">
-              <MessageSquare size={36} className="text-slate-200 mx-auto mb-3" />
-              <p className="text-slate-400 text-sm">Netlify API 연동 후 문의 내역이 표시됩니다</p>
-              <p className="text-slate-300 text-xs mt-1">현재는 Netlify 대시보드에서 확인 가능합니다</p>
-            </div>
+            {inquiriesLoading ? (
+              <div className="text-center text-slate-400 py-16 text-sm">불러오는 중...</div>
+            ) : inquiries.length === 0 ? (
+              <div className="bg-white rounded-2xl p-10 shadow-sm border border-slate-100 text-center">
+                <MessageSquare size={36} className="text-slate-200 mx-auto mb-3" />
+                <p className="text-slate-400 text-sm">아직 문의가 없습니다</p>
+              </div>
+            ) : (
+              <div className="space-y-3">
+                {inquiries.map((item) => (
+                  <div key={item.id} className="bg-white rounded-2xl p-5 shadow-sm border border-slate-100">
+                    <div className="flex items-start justify-between mb-3">
+                      <div>
+                        <span className="font-semibold text-slate-800 text-sm">{item.name}</span>
+                        {item.service && (
+                          <span className="ml-2 text-xs bg-violet-50 text-violet-500 px-2 py-0.5 rounded-full">{item.service}</span>
+                        )}
+                      </div>
+                      <span className="text-xs text-slate-400">
+                        {new Date(item.created_at).toLocaleString('ko-KR')}
+                      </span>
+                    </div>
+                    <div className="flex gap-4 text-xs text-slate-500 mb-3">
+                      <span>{item.email}</span>
+                      {item.phone && <span>{item.phone}</span>}
+                    </div>
+                    {item.message && (
+                      <p className="text-sm text-slate-600 bg-slate-50 rounded-xl px-4 py-3">{item.message}</p>
+                    )}
+                  </div>
+                ))}
+              </div>
+            )}
           </div>
         )}
 

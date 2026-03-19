@@ -1,10 +1,10 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react';
+import { supabase } from '../services/supabase';
 
 const POPUP_WIDTH_DESKTOP = 378;
 const POPUP_WIDTH_MOBILE = 252;
 const MARGIN = 272; // LINE 버튼(48px) + 간격(224px)
 
-const IS_LOCAL = window.location.hostname === 'localhost';
 
 const Popup: React.FC = () => {
   const [visible, setVisible] = useState(false);
@@ -24,26 +24,18 @@ const Popup: React.FC = () => {
     const hideUntil = localStorage.getItem('popup_hide_until');
     if (hideUntil && new Date().getTime() < parseInt(hideUntil)) return;
 
-    if (IS_LOCAL) {
-      // 로컬 개발: localStorage 사용
-      const active = localStorage.getItem('popup_active') === 'true';
-      const img = localStorage.getItem('popup_image') || '';
-      if (active && img) {
-        setImage(img);
-        setVisible(true);
-      }
-    } else {
-      // 프로덕션: 서버에서 팝업 데이터 가져오기
-      fetch('/.netlify/functions/popup-get')
-        .then((r) => r.json())
-        .then((data) => {
-          if (data.active && data.image) {
-            setImage(data.image);
-            setVisible(true);
-          }
-        })
-        .catch(() => {});
-    }
+    supabase
+      .from('popup_settings')
+      .select('active, image_url')
+      .eq('id', 1)
+      .single()
+      .then(({ data }) => {
+        if (data?.active && data?.image_url) {
+          setImage(data.image_url);
+          setVisible(true);
+        }
+      })
+      .catch(() => {});
   }, []);
 
   // 우측 초기 위치 설정 후 fade-in

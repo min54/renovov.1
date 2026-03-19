@@ -5,7 +5,7 @@ import { getSkinConsultation } from '../services/geminiService';
 
 const AIConsultant: React.FC = () => {
   const [messages, setMessages] = useState<ChatMessage[]>([
-    { role: 'model', text: '안녕하세요! 레노보 홍대 피부과 AI 상담원입니다. 피부 고민을 말씀해 주시면 적절한 시술을 추천해 드릴게요. (예: "여드름 흉터가 고민이에요", "얼굴 탄력이 떨어졌어요")' }
+    { role: 'model', text: '안녕하세요! 벨아미리노보 피부과 AI 상담원입니다. 피부 고민을 말씀해 주시면 적절한 시술을 추천해 드릴게요. (예: "여드름 흉터가 고민이에요", "얼굴 탄력이 떨어졌어요")' }
   ]);
   const [input, setInput] = useState('');
   const [isLoading, setIsLoading] = useState(false);
@@ -87,7 +87,7 @@ const AIConsultant: React.FC = () => {
               </div>
             </div>
             <button
-              onClick={() => setMessages([{ role: 'model', text: '안녕하세요! 레노보 홍대 피부과 AI 상담원입니다.' }])}
+              onClick={() => setMessages([{ role: 'model', text: '안녕하세요! 벨아미리노보 피부과 AI 상담원입니다.' }])}
               className="text-white/40 hover:text-white p-2 transition-colors"
             >
               <RefreshCw size={16} />

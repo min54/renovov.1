@@ -22,7 +22,7 @@ export const translations = {
             badge: 'Premium & Private',
             title1: '진정성 있는 진료,',
             title2: '결과로 증명합니다',
-            desc: '레노보 홍대 벨아미리노보 피부과는 획일화된 공장형 시술을 지양합니다. 개인의 피부 상태와 얼굴형을 정밀하게 분석하여 가장 이상적인 아름다움을 찾아드리는 하이엔드 피부과입니다.',
+            desc: '벨아미리노보 피부과는 획일화된 공장형 시술을 지양합니다. 개인의 피부 상태와 얼굴형을 정밀하게 분석하여 가장 이상적인 아름다움을 찾아드리는 하이엔드 피부과입니다.',
             points: {
                 specialist: '피부과 전문의 책임 진료',
                 equipment: '하이엔드 오리지널 장비',
@@ -41,8 +41,8 @@ export const translations = {
             }
         },
         specialization: {
-            badge: 'Why Choose Renovo',
-            title: '레노보만의',
+            badge: 'Why Choose Belle Amie Renovo',
+            title: '벨아미리노보만의',
             titleHighlight: '특별한 약속',
             desc: '일반적인 병원과는 다릅니다. 오직 당신만을 위한 세심한 배려와 차별화된 결과를 경험하세요.',
             points: [
@@ -59,14 +59,14 @@ export const translations = {
                 {
                     title: '독자적인 시술 기법',
                     subtitle: 'Signature Technique',
-                    desc: '리프팅 장비에 대한 레노보만의 특화된 레이어드 시술 노하우로 더욱 강력하고 오래 지속되는 최상의 결과를 만들어냅니다.'
+                    desc: '리프팅 장비에 대한 벨아미리노보만의 특화된 레이어드 시술 노하우로 더욱 강력하고 오래 지속되는 최상의 결과를 만들어냅니다.'
                 }
             ]
         },
         services: {
             badge: 'Our Treatments',
             title: '당신을 위한 프리미엄 솔루션',
-            desc: '레노보 홍대 피부과는 정품, 정량 원칙을 준수하며 검증된 최신 장비만을 사용합니다.',
+            desc: '벨아미리노보 피부과는 정품, 정량 원칙을 준수하며 검증된 최신 장비만을 사용합니다.',
             items: {
                 1: { title: '리쥬란 힐러', desc: `<p class="lead-text">피부가 스스로 회복하게 만드는<br>연어 DNA 재생 주사</p>
 
@@ -164,7 +164,7 @@ export const translations = {
 
 <details>
 <summary>눈 주변 시술이라 위험하지 않나요?</summary>
-<div class="answer"><p>의료 전문의가 정밀하게 시술하므로 안전합니다. 눈가는 혈관과 신경이 밀집한 부위이므로 반드시 숙련된 피부과 전문의에게 시술받으시는 것이 중요합니다. 레노보 홍대 피부과에서는 풍부한 경험을 바탕으로 안전하게 시술합니다.</p></div>
+<div class="answer"><p>의료 전문의가 정밀하게 시술하므로 안전합니다. 눈가는 혈관과 신경이 밀집한 부위이므로 반드시 숙련된 피부과 전문의에게 시술받으시는 것이 중요합니다. 벨아미리노보 피부과에서는 풍부한 경험을 바탕으로 안전하게 시술합니다.</p></div>
 </details>
 
 <details>
@@ -651,7 +651,7 @@ export const translations = {
 
 <details>
 <summary>정품 여부를 어떻게 확인할 수 있나요?</summary>
-<div class="answer"><p>레노보 홍대 피부과는 정품, 정량 원칙을 엄수하며, 시술 시 포장된 제품을 고객 앞에서 개봉하여 보여드립니다. 제품 패키지의 정품 인증 스티커와 일련번호로 확인하실 수 있습니다.</p></div>
+<div class="answer"><p>벨아미리노보 피부과는 정품, 정량 원칙을 엄수하며, 시술 시 포장된 제품을 고객 앞에서 개봉하여 보여드립니다. 제품 패키지의 정품 인증 스티커와 일련번호로 확인하실 수 있습니다.</p></div>
 </details>`, price: '' },
                 12: { title: '벨로테로 필러', desc: `<div style="background:linear-gradient(135deg,#f5f3ff 0%,#ede9fe 100%);border-radius:20px;padding:1.5rem 1.75rem;margin-bottom:0.25rem;"><p style="margin:0;font-size:0.95rem;color:#4c1d95;line-height:1.9;font-weight:500;">Merz 정품 벨로테로는 CPM 기술로 만들어진 초미세 HA 필러로, 눈가·윗입술 주름·이마 등 가장 섬세한 부위에도 자연스럽게 녹아드는 정밀 필러입니다.</p></div>
 
@@ -747,7 +747,7 @@ export const translations = {
 
 <details>
 <summary>자연스럽지 않게 보이지 않을까요?</summary>
-<div class="answer"><p>레노보 홍대 피부과는 과한 볼륨보다 <strong>자연스러운 황금 비율</strong>을 최우선으로 합니다. 시술 전 충분한 상담을 통해 원하시는 방향과 한계를 명확히 설정하며, 적절한 양과 위치로 시술하여 어색하지 않은 결과를 만들어드립니다.</p></div>
+<div class="answer"><p>벨아미리노보 피부과는 과한 볼륨보다 <strong>자연스러운 황금 비율</strong>을 최우선으로 합니다. 시술 전 충분한 상담을 통해 원하시는 방향과 한계를 명확히 설정하며, 적절한 양과 위치로 시술하여 어색하지 않은 결과를 만들어드립니다.</p></div>
 </details>
 
 <details>
@@ -792,7 +792,7 @@ export const translations = {
 
 <details>
 <summary>표정이 어색하거나 굳어 보이지 않나요?</summary>
-<div class="answer"><p>적절한 양과 위치에 정밀하게 주입하면 자연스러운 표정을 유지할 수 있습니다. 레노보 홍대 피부과에서는 과도한 주입보다 자연스러운 결과를 우선시하며, 충분한 상담을 통해 원하시는 방향으로 조절합니다.</p></div>
+<div class="answer"><p>적절한 양과 위치에 정밀하게 주입하면 자연스러운 표정을 유지할 수 있습니다. 벨아미리노보 피부과에서는 과도한 주입보다 자연스러운 결과를 우선시하며, 충분한 상담을 통해 원하시는 방향으로 조절합니다.</p></div>
 </details>
 
 <details>
@@ -1259,7 +1259,7 @@ export const translations = {
             body: '당신의 피부가 기억하는\n가장 빛나는 순간을 되찾아 드립니다.',
         },
         footer: {
-            desc: '레노보 홍대 피부과는 끊임없는 연구와 정직한 진료로 고객님의 피부 건강과 아름다움을 책임집니다.',
+            desc: '벨아미리노보 피부과는 끊임없는 연구와 정직한 진료로 고객님의 피부 건강과 아름다움을 책임집니다.',
             sitemap: 'Sitemap',
             legal: 'Legal',
             social: 'Social',
@@ -1278,7 +1278,7 @@ export const translations = {
         youtube: {
             label: 'Hospital Introduction',
             title1: '영상으로 만나는',
-            title2: '레노보홍 피부과',
+            title2: '벨아미리노보 피부과',
             desc: '직접 방문하기 전, 영상으로 먼저 만나보세요.',
             popular: '인기동영상'
         },
@@ -1332,7 +1332,7 @@ export const translations = {
             }
         },
         specialization: {
-            badge: 'Why Choose Renovo',
+            badge: 'Why Choose Belle Amie Renovo',
             title: 'Renovo\'s',
             titleHighlight: 'Special Promise',
             desc: 'Different from ordinary clinics. Experience meticulous care and differentiated results just for you.',
@@ -2623,7 +2623,7 @@ export const translations = {
             }
         },
         specialization: {
-            badge: 'Why Choose Renovo',
+            badge: 'Why Choose Belle Amie Renovo',
             title: 'レノボだけの',
             titleHighlight: '特別な約束',
             desc: '一般的な病院とは違います。あなただけのための細やかな配慮と差別化された結果をご体験ください。',

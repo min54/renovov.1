@@ -27,7 +27,7 @@ const Footer: React.FC = () => {
               {/* 소셜 */}
               <div className="flex gap-3 pt-1">
                 <a
-                  href="https://www.instagram.com"
+                  href="https://www.instagram.com/renovo_clinic/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-9 h-9 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white/60 hover:bg-violet-500 hover:border-violet-500 hover:text-white transition-all"

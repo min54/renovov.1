@@ -43,6 +43,15 @@ const YoutubeSection: React.FC = () => {
   };
 
   const visibleVideos = VIDEOS.slice(startIndex, startIndex + VISIBLE);
+  const isMobile = () => window.innerWidth < 768;
+
+  const handleVideoClick = (videoId: string) => {
+    if (isMobile()) {
+      window.open(`https://www.youtube.com/watch?v=${videoId}`, '_blank');
+    } else {
+      setPlayingId(playingId === videoId ? null : videoId);
+    }
+  };
 
   return (
     <section className="relative bg-slate-950 py-24 overflow-hidden">
@@ -100,7 +109,7 @@ const YoutubeSection: React.FC = () => {
           {/* 카드 슬라이더 */}
           <div className="grid grid-cols-4 gap-3">
             {visibleVideos.map((video) => (
-              <div key={video.id} className="flex flex-col gap-2 text-left group cursor-pointer" onClick={() => setPlayingId(playingId === video.id ? null : video.id)}>
+              <div key={video.id} className="flex flex-col gap-2 text-left group cursor-pointer" onClick={() => handleVideoClick(video.id)}>
                 {/* 썸네일 또는 플레이어 */}
                 <div className="relative rounded-xl overflow-hidden border border-white/10 shadow-lg shadow-black/40 transition-transform group-hover:scale-[1.03]" style={{ paddingBottom: '56.25%' }}>
                   {playingId === video.id ? (

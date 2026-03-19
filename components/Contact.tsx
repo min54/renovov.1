@@ -26,6 +26,14 @@ const Contact: React.FC = () => {
         service: form.service,
         message: form.message,
       }]);
+
+      // 이메일 알림 발송
+      await fetch('/.netlify/functions/send-email', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(form),
+      });
+
       setSubmitted(true);
     } catch {
       setSubmitted(true);

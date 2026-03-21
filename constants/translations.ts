@@ -89,6 +89,10 @@ export const translations = {
 
 <div class="divider"></div>
 
+<div style="text-align:center; margin: 2rem 0;">
+  <img src="/rejuran-interval.png" alt="리쥬란힐러 시술간격" style="max-width:100%; border-radius:16px;" />
+</div>
+
 <h2>기대할 수 있는 변화</h2>
 <div class="benefit-grid">
   <div class="benefit-card">

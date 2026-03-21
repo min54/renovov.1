@@ -14,7 +14,7 @@ exports.handler = async (event) => {
       },
       body: JSON.stringify({
         from: 'onboarding@resend.dev',
-        to: ['kataroteno@gmail.com'],
+        to: ['kataroteno@gmail.com', 'belleamie1122@naver.com'],
         subject: `[벨아미리노보] 새 문의가 도착했습니다 - ${name}`,
         html: `
           <div style="font-family: sans-serif; max-width: 600px; margin: 0 auto;">

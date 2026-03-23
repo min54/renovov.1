@@ -1422,6 +1422,8 @@ export const translations = {
 
 <div class="divider"></div>
 
+<img src="/images/treatments/treatment_1.png" alt="Rejuran Healer Treatment Interval" style="width:100%;border-radius:16px;margin:0 0 2rem 0;" />
+
 <h2>Frequently Asked Questions</h2>
 
 <details>
@@ -1578,6 +1580,8 @@ export const translations = {
 <h2>How It Works</h2>
 <p>Ulthera uses <strong>HIFU (High-Intensity Focused Ultrasound)</strong> technology to precisely deliver energy to deep skin layers without surface damage. When energy penetrates to the <strong>SMAS (Superficial Musculoaponeurotic System) layer</strong>, Thermal Coagulation Points are formed, triggering the body's natural healing response to generate and remodel new collagen. This achieves lifting effects similar to a surgical facelift — without surgery.</p>
 
+<img src="/images/treatments/treatment_4.png" alt="Ulthera Treatment Mechanism" style="width:100%;border-radius:16px;margin:1.5rem 0;" />
+
 <h2>Key Benefits</h2>
 <ul>
 <li>Powerful non-surgical lifting reaching the SMAS fascia layer</li>
@@ -1586,6 +1590,8 @@ export const translations = {
 <li>Improvement of drooping eyelids, brow ptosis, and eye contour</li>
 <li>Effects continue to improve for up to 6 months post-treatment</li>
 </ul>
+
+<img src="/images/treatments/treatment_4b.png" alt="Ulthera Treatment Areas" style="width:100%;border-radius:16px;margin:1.5rem 0;" />
 
 <h2>Recommended For</h2>
 <ul>
@@ -1626,6 +1632,9 @@ export const translations = {
 
 <h2>How It Works</h2>
 <p>InMode uses <strong>bipolar RF (radiofrequency) energy</strong> to precisely heat tissue from the deep fat layer to the dermis. The <strong>FaceTite</strong> handpiece contracts fat and tightens subdermal tissue, while <strong>Morpheus8</strong> combines microneedling with RF to deliver direct thermal stimulation to the dermis, inducing collagen regeneration. This combination achieves simultaneous volume reduction and skin elasticity enhancement.</p>
+
+<img src="/images/treatments/treatment_5.png" alt="InMode Lifting Features" style="width:100%;border-radius:16px;margin:1.5rem 0;" />
+<img src="/images/treatments/treatment_5b.png" alt="InMode MINI FX / FORMA FX" style="width:100%;border-radius:16px;margin:1.5rem 0;" />
 
 <h2>Key Benefits</h2>
 <ul>
@@ -1725,6 +1734,8 @@ export const translations = {
 <h2>How It Works</h2>
 <p>Korège uses <strong>selective RF energy</strong> technology to <strong>heat only the dermis layer</strong> without damaging the epidermis. This thermal stimulation contracts collagen fibers in the dermis and promotes new collagen formation, strengthening skin elasticity and thickness. The precision energy control system ensures uniform, safe treatment effects and is gentle enough for sensitive skin.</p>
 
+<img src="/images/treatments/treatment_7.png" alt="Korège Lifting Device" style="width:100%;border-radius:16px;margin:1.5rem 0;" />
+
 <h2>Key Benefits</h2>
 <ul>
 <li>Elasticity improvement through dermal collagen remodeling</li>
@@ -1773,6 +1784,8 @@ export const translations = {
 
 <h2>How It Works</h2>
 <p>Thread lifting inserts <strong>biodegradable PDO (Polydioxanone) or PLLA (Poly-L-Lactic Acid)</strong> threads into the dermal layer. The threads physically pull the skin upward to create an <strong>immediate lifting effect</strong>. As threads gradually dissolve, they trigger a foreign body response that <strong>stimulates collagen production</strong> for long-term elasticity improvement. Different thread types (barbed, smooth, helical, etc.) and insertion patterns allow various lifting effects.</p>
+
+<img src="/images/treatments/treatment_8.png" alt="Thread Lifting Types" style="width:100%;border-radius:16px;margin:1.5rem 0;" />
 
 <h2>Key Benefits</h2>
 <ul>
@@ -1968,6 +1981,8 @@ export const translations = {
 
 <h2>How It Works</h2>
 <p>Belotero is manufactured using Merz's proprietary <strong>CPM (Cohesive Polydensified Matrix) technology</strong>. This technology cross-links HA molecules at varying densities, simultaneously providing cohesion and flexibility. As a result, the filler <strong>spreads evenly and integrates naturally</strong> within the skin after injection, creating a smooth result without stiffness or unevenness. It is particularly excellent for thin, high-movement areas such as under the eyes, upper lip lines (barcode wrinkles), and the forehead.</p>
+
+<img src="/images/treatments/treatment_12.png" alt="Belotero Filler Treatment" style="width:100%;border-radius:16px;margin:1.5rem 0;" />
 
 <h2>Key Benefits</h2>
 <ul>
@@ -2717,6 +2732,8 @@ export const translations = {
 
 <div class="divider"></div>
 
+<img src="/images/treatments/treatment_1.png" alt="リジュランヒーラー施術間隔" style="width:100%;border-radius:16px;margin:0 0 2rem 0;" />
+
 <h2>よくある質問</h2>
 
 <details>
@@ -2873,6 +2890,8 @@ export const translations = {
 <h2>施術原理</h2>
 <p>ウルセラは<strong>HIFU（高密度焦点式超音波）</strong>技術を使い、表面にダメージを与えずに皮膚深層へ精密にエネルギーを届けます。<strong>SMAS（表在性筋膜）層</strong>までエネルギーが届くと熱凝固点が形成され、体の自然な治癒反応が新しいコラーゲンの生成とリモデリングを促進。手術に近いリフティング効果を手術なしで実現します。</p>
 
+<img src="/images/treatments/treatment_4.png" alt="ウルセラ施術原理" style="width:100%;border-radius:16px;margin:0 0 2rem 0;" />
+
 <h2>主な効果</h2>
 <ul>
 <li>SMAS筋膜層まで届く強力な非侵襲リフティング</li>
@@ -2881,6 +2900,8 @@ export const translations = {
 <li>まぶたのたるみ・眉下垂・目周りの輪郭改善</li>
 <li>施術後6ヶ月かけて効果が持続向上</li>
 </ul>
+
+<img src="/images/treatments/treatment_4b.png" alt="ウルセラ施術可能部位" style="width:100%;border-radius:16px;margin:0 0 2rem 0;" />
 
 <h2>こんな方におすすめ</h2>
 <ul>
@@ -2921,6 +2942,9 @@ export const translations = {
 
 <h2>施術原理</h2>
 <p>インモードは<strong>バイポーラRF（高周波）エネルギー</strong>を使い、脂肪層から真皮まで精密に加熱します。<strong>FaceTite</strong>ハンドピースが脂肪を収縮させ真皮下組織を引き締め、<strong>Morpheus8</strong>はマイクロニードルとRFを組み合わせて真皮に直接熱刺激を与えコラーゲン再生を誘導。ボリューム減少と肌弾力向上を同時に実現します。</p>
+
+<img src="/images/treatments/treatment_5.png" alt="インモードの特長" style="width:100%;border-radius:16px;margin:0 0 1rem 0;" />
+<img src="/images/treatments/treatment_5b.png" alt="インモード MINI FX / FORMA FX" style="width:100%;border-radius:16px;margin:0 0 2rem 0;" />
 
 <h2>主な効果</h2>
 <ul>
@@ -3020,6 +3044,8 @@ export const translations = {
 <h2>施術原理</h2>
 <p>コレジュは<strong>選択的RFエネルギー</strong>技術を使い、表皮を傷つけずに<strong>真皮層のみを加熱</strong>します。この熱刺激が真皮のコラーゲン線維を収縮させ新しいコラーゲン形成を促進し、肌の弾力と厚みを強化します。精密なエネルギーコントロールシステムにより均一で安全な施術効果を確保し、敏感肌にも対応しています。</p>
 
+<img src="/images/treatments/treatment_7.png" alt="コレジュ機器" style="width:100%;border-radius:16px;margin:0 0 2rem 0;" />
+
 <h2>主な効果</h2>
 <ul>
 <li>真皮コラーゲンリモデリングによる弾力改善</li>
@@ -3068,6 +3094,8 @@ export const translations = {
 
 <h2>施術原理</h2>
 <p>スレッドリフティングは<strong>生体吸収性PDO（ポリジオキサノン）またはPLLA（ポリ-L-乳酸）</strong>の糸を真皮層に挿入します。糸が物理的に肌を引き上げて<strong>即時リフティング効果</strong>を生み出します。糸が徐々に溶けるにつれ異物反応が起こり<strong>コラーゲン生成を促進</strong>して長期的な弾力改善をもたらします。糸の種類（コグ付き・スムース・ヘリカルなど）と挿入パターンにより様々なリフティング効果が得られます。</p>
+
+<img src="/images/treatments/treatment_8.png" alt="スレッドリフティング 糸の種類" style="width:100%;border-radius:16px;margin:0 0 2rem 0;" />
 
 <h2>主な効果</h2>
 <ul>
@@ -3263,6 +3291,8 @@ export const translations = {
 
 <h2>施術原理</h2>
 <p>ベロテロはメルツ社独自の<strong>CPM（コヒーシブ ポリデンシファイド マトリックス）技術</strong>で製造されています。この技術がHA分子を異なる密度で架橋し、凝集性と柔軟性を同時に提供します。その結果、注入後に<strong>皮膚内で均一に広がり自然になじみ</strong>、硬さや凹凸のないなめらかな仕上がりに。特に目の下・上唇の縦じわ（バーコードしわ）・おでこなど薄くて動きの多い部位に優れています。</p>
+
+<img src="/images/treatments/treatment_12.png" alt="ベロテロ フィラー" style="width:100%;border-radius:16px;margin:0 0 2rem 0;" />
 
 <h2>主な効果</h2>
 <ul>

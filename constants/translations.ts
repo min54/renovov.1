@@ -89,10 +89,6 @@ export const translations = {
 
 <div class="divider"></div>
 
-<div style="text-align:center; margin: 2rem 0;">
-  <img src="/rejuran-interval.png" alt="리쥬란힐러 시술간격" style="max-width:100%; border-radius:16px;" />
-</div>
-
 <h2>기대할 수 있는 변화</h2>
 <div class="benefit-grid">
   <div class="benefit-card">
@@ -726,6 +722,8 @@ export const translations = {
 
 <h2>시술 원리</h2>
 <p>단순히 주름을 채우는 것을 넘어 <strong>얼굴 전체의 볼륨 밸런스</strong>를 분석하여 입체적으로 설계합니다. 부위마다 요구되는 점도와 특성이 다르기 때문에 레스틸렌·벨로테로·쥬비덤 등 <strong>부위별 최적 제품을 조합</strong>하여 시술합니다. 박태훈 원장의 정밀한 안면 구조 분석과 풍부한 필러 시술 경험을 바탕으로 과하지 않고 자연스러운 결과를 추구합니다.</p>
+
+<img src="/images/treatments/treatment_13.png" alt="얼굴 전체 필러 시술" style="width:100%;border-radius:16px;margin:1.5rem 0;" />
 
 <h2>주요 시술 부위 및 효과</h2>
 <h3>볼·관자놀이</h3>
@@ -2020,6 +2018,8 @@ export const translations = {
 <h2>How It Works</h2>
 <p>This goes beyond simply filling wrinkles — it analyzes the <strong>overall volume balance of the entire face</strong> and designs treatment three-dimensionally. Since each area requires different viscosities and properties, <strong>optimal products are combined by area</strong> — Restylane, Belotero, Juvederm, and others. Based on precise facial structure analysis and extensive filler experience, we pursue results that are natural rather than excessive.</p>
 
+<img src="/images/treatments/treatment_13.png" alt="Full Face Filler Treatment" style="width:100%;border-radius:16px;margin:1.5rem 0;" />
+
 <h2>Key Treatment Areas & Effects</h2>
 <h3>Cheeks & Temples</h3>
 <p>Filling sunken cheeks and temples to restore a <strong>youthful, rounded face shape</strong>. Heavy nasolabial folds and a sagging appearance are naturally improved as well.</p>
@@ -3312,6 +3312,8 @@ export const translations = {
 
 <h2>施術原理</h2>
 <p>単にシワを補填するだけでなく、<strong>顔全体のボリュームバランス</strong>を分析して立体的にデザインします。部位ごとに異なる粘度と特性が必要なため、レスタイレン・ベロテロ・ジュビダームなど<strong>部位に応じた最適製品を組み合わせ</strong>ます。精密な顔面構造分析と豊富なフィラー経験をもとに、過度にならず自然な結果を追求します。</p>
+
+<img src="/images/treatments/treatment_13.png" alt="フェイス全体フィラー施術" style="width:100%;border-radius:16px;margin:1.5rem 0;" />
 
 <h2>主な施術部位と効果</h2>
 <h3>頬・こめかみ</h3>

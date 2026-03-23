@@ -17,6 +17,7 @@ interface Inquiry {
   created_at: string;
 }
 
+
 const AdminPage: React.FC = () => {
   const [loggedIn, setLoggedIn] = useState(() => sessionStorage.getItem('admin_auth') === 'true');
   const [id, setId] = useState('');
@@ -24,13 +25,16 @@ const AdminPage: React.FC = () => {
   const [error, setError] = useState('');
   const [section, setSection] = useState<Section>('dashboard');
 
+  // 팝업
   const [popupImage, setPopupImage] = useState('');
   const [popupActive, setPopupActive] = useState(false);
   const [popupLoading, setPopupLoading] = useState(false);
   const fileRef = useRef<HTMLInputElement>(null);
 
+  // 문의
   const [inquiries, setInquiries] = useState<Inquiry[]>([]);
   const [inquiriesLoading, setInquiriesLoading] = useState(false);
+
 
   // 팝업 설정 불러오기
   useEffect(() => {
@@ -61,6 +65,7 @@ const AdminPage: React.FC = () => {
         setInquiriesLoading(false);
       });
   }, [section]);
+
 
   const handleLogin = (e: React.FormEvent) => {
     e.preventDefault();
@@ -121,7 +126,6 @@ const AdminPage: React.FC = () => {
 
   const deleteImage = async () => {
     setPopupLoading(true);
-    // 파일명 추출해서 스토리지에서도 삭제
     const path = popupImage.split('/popup-images/')[1];
     if (path) await supabase.storage.from('popup-images').remove([path]);
     setPopupImage('');
@@ -129,6 +133,7 @@ const AdminPage: React.FC = () => {
     await savePopup('', false);
     setPopupLoading(false);
   };
+
 
   /* ── 로그인 화면 ── */
   if (!loggedIn) {
@@ -174,9 +179,9 @@ const AdminPage: React.FC = () => {
 
   /* ── 어드민 대시보드 ── */
   const navItems = [
-    { id: 'dashboard', label: '대시보드', icon: LayoutDashboard },
-    { id: 'popup', label: '팝업 관리', icon: Image },
-    { id: 'inquiries', label: '문의 내역', icon: MessageSquare },
+    { id: 'dashboard',  label: '대시보드',  icon: LayoutDashboard },
+    { id: 'popup',      label: '팝업 관리', icon: Image },
+    { id: 'inquiries',  label: '문의 내역', icon: MessageSquare },
   ] as const;
 
   return (
@@ -318,6 +323,7 @@ const AdminPage: React.FC = () => {
             </div>
           </div>
         )}
+
 
         {/* 문의 내역 */}
         {section === 'inquiries' && (

@@ -115,6 +115,8 @@ export const translations = {
 
 <div class="divider"></div>
 
+<img src="/images/treatments/treatment_1.png" alt="리쥬란힐러 시술간격 안내" style="width:100%;border-radius:16px;margin:0 0 2rem 0;" />
+
 <h2>자주 묻는 질문</h2>
 
 <details>
@@ -271,6 +273,8 @@ export const translations = {
 <h2>시술 원리</h2>
 <p>울쎄라는 <strong>HIFU(고강도 집속 초음파)</strong> 기술을 사용하여 피부 표면에 손상 없이 에너지를 피부 깊은 층에 정밀하게 전달합니다. 에너지가 <strong>SMAS(표재성 근막) 층</strong>까지 침투하여 열응고점(Thermal Coagulation Point)을 형성하면, 신체 자연 치유 반응으로 콜라겐이 새롭게 생성·재배열됩니다. 이는 외과적 페이스리프트와 유사한 리프팅 효과를 비수술적으로 구현합니다.</p>
 
+<img src="/images/treatments/treatment_4.png" alt="울쎄라 시술 원리" style="width:100%;border-radius:16px;margin:1.5rem 0;" />
+
 <h2>주요 효과</h2>
 <ul>
 <li>SMAS 근막층까지 작용하는 강력한 비수술 리프팅</li>
@@ -279,6 +283,8 @@ export const translations = {
 <li>눈꺼풀·눈썹 처짐 개선 및 눈매 개선</li>
 <li>시술 후 최대 6개월에 걸쳐 효과가 지속·향상</li>
 </ul>
+
+<img src="/images/treatments/treatment_4b.png" alt="울쎄라 시술 가능 부위" style="width:100%;border-radius:16px;margin:1.5rem 0;" />
 
 <h2>이런 분께 추천드립니다</h2>
 <ul>
@@ -319,6 +325,10 @@ export const translations = {
 
 <h2>시술 원리</h2>
 <p>인모드는 <strong>양극성 RF(고주파) 에너지</strong>를 이용해 피부 깊숙한 지방층부터 진피층까지 정밀하게 가열합니다. <strong>FaceTite</strong> 핸드피스는 지방층을 수축시키고 피부 하방 조직을 타이트닝하며, <strong>Morpheus8</strong>은 마이크로니들과 RF를 결합해 진피층에 직접 열 자극을 가해 콜라겐 재생을 유도합니다. 두 기술의 조합으로 볼륨 감소와 피부 탄력 향상을 동시에 이룰 수 있습니다.</p>
+
+<img src="/images/treatments/treatment_5.png" alt="인모드 리프팅의 특별함" style="width:100%;border-radius:16px;margin:1.5rem 0;" />
+
+<img src="/images/treatments/treatment_5b.png" alt="인모드 MINI FX / FORMA FX" style="width:100%;border-radius:16px;margin:1.5rem 0;" />
 
 <h2>주요 효과</h2>
 <ul>
@@ -418,6 +428,8 @@ export const translations = {
 <h2>시술 원리</h2>
 <p>코레지는 <strong>선택적 RF 에너지</strong> 기술을 통해 표피층에 손상을 주지 않고 <strong>진피층만을 선택적으로 가열</strong>합니다. 이 열 자극이 진피 내 콜라겐 섬유를 수축시키고, 이후 신생 콜라겐 생성을 촉진하여 피부 탄력과 두께를 강화합니다. 정교한 에너지 제어 시스템으로 균일하고 안전한 치료 효과를 보장하며, 민감성 피부에도 부담 없이 적용할 수 있습니다.</p>
 
+<img src="/images/treatments/treatment_7.png" alt="코레지 리프팅 장비" style="width:100%;border-radius:16px;margin:1.5rem 0;" />
+
 <h2>주요 효과</h2>
 <ul>
 <li>진피층 콜라겐 재형성을 통한 탄력 개선</li>
@@ -466,6 +478,8 @@ export const translations = {
 
 <h2>시술 원리</h2>
 <p>실리프팅은 <strong>PDO(폴리다이옥사논) 또는 PLLA(폴리-L-젖산)</strong> 소재의 생분해성 실을 피부 진피층에 삽입합니다. 삽입된 실은 즉각적으로 피부를 물리적으로 당겨 올려 <strong>즉각적인 리프팅 효과</strong>를 만들어냅니다. 이후 실이 서서히 녹으면서 체내 이물 반응으로 <strong>콜라겐 생성</strong>이 자극되어 탄력이 장기적으로 향상됩니다. 실의 종류(가시실, 민실, 나선형 등)와 삽입 패턴에 따라 다양한 리프팅 효과를 구현할 수 있습니다.</p>
+
+<img src="/images/treatments/treatment_8.png" alt="실리프팅 실 종류" style="width:100%;border-radius:16px;margin:1.5rem 0;" />
 
 <h2>주요 효과</h2>
 <ul>
@@ -661,6 +675,8 @@ export const translations = {
 
 <h2>시술 원리</h2>
 <p>벨로테로는 <strong>Merz</strong>의 독자적인 <strong>CPM(Cohesive Polydensified Matrix) 기술</strong>로 제조됩니다. 이 기술은 HA 분자를 다양한 밀도로 교차 결합시켜 겔의 응집력과 유연성을 동시에 부여합니다. 덕분에 주입 후 <strong>피부 내에서 균일하게 퍼지고 자연스럽게 통합</strong>되어 딱딱한 느낌이나 凹凸 없이 매끄러운 결과를 냅니다. 특히 눈 밑, 윗입술 주름선(바코드 주름), 이마 등 피부가 얇고 움직임이 많은 부위에 탁월합니다.</p>
+
+<img src="/images/treatments/treatment_12.png" alt="벨로테로 필러 시술" style="width:100%;border-radius:16px;margin:1.5rem 0;" />
 
 <h2>주요 효과</h2>
 <ul>
@@ -1235,10 +1251,12 @@ export const translations = {
             addressTitle: 'Address',
             address: '서울특별시 마포구 양화로 176 동교동 와이즈파크 5층 (홍대입구역 8번 출구)',
             emailTitle: 'Email',
+            email: 'belleamie1122@naver.com',
             hoursTitle: 'Hours',
-            weekdays: '월-금 10:00 - 20:00',
-            saturday: '토 10:00 - 16:00',
-            sunday: '일요일 휴진',
+            hours1: '월·수·목  10:30 - 19:30',
+            hours2: '화·금  13:00 - 21:00 (야간)',
+            saturday: '토  10:00 - 15:00',
+            sunday: '일요일 정기휴무',
             formTitle: '빠른 예약 신청',
             namePlaceholder: '이름',
             emailPlaceholder: '이메일',
@@ -2526,10 +2544,12 @@ export const translations = {
             addressTitle: 'Address',
             address: '5F, Wise Park, 176 Yanghwa-ro, Mapo-gu, Seoul (Exit 8, Hongik Univ. Station)',
             emailTitle: 'Email',
+            email: 'belleamie1122@naver.com',
             hoursTitle: 'Hours',
-            weekdays: 'Mon-Fri 10:00 - 20:00',
-            saturday: 'Sat 10:00 - 16:00',
-            sunday: 'Closed on Sundays',
+            hours1: 'Mon·Wed·Thu  10:30 - 19:30',
+            hours2: 'Tue·Fri  13:00 - 21:00 (Evening)',
+            saturday: 'Sat  10:00 - 15:00',
+            sunday: 'Sun  Closed',
             formTitle: 'Quick Reservation',
             namePlaceholder: 'Name',
             emailPlaceholder: 'Email',
@@ -3817,10 +3837,12 @@ export const translations = {
             addressTitle: '住所',
             address: 'ソウル特別市麻浦区楊花路176 東橋洞ワイズパーク5階（弘大入口駅8番出口）',
             emailTitle: 'メール',
+            email: 'belleamie1122@naver.com',
             hoursTitle: '診療時間',
-            weekdays: '月-金 10:00 - 20:00',
-            saturday: '土 10:00 - 16:00',
-            sunday: '日曜 休診',
+            hours1: '月·水·木  10:30 - 19:30',
+            hours2: '火·金  13:00 - 21:00 (夜間)',
+            saturday: '土  10:00 - 15:00',
+            sunday: '日曜 定休日',
             formTitle: '簡単予約申請',
             namePlaceholder: 'お名前',
             emailPlaceholder: 'メール',

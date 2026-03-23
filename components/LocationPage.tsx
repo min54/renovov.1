@@ -75,7 +75,8 @@ const LocationPage: React.FC<Props> = ({ onBack }) => {
               <div>
                 <h3 className="text-base font-bold text-slate-900 mb-2">{t.contact.hoursTitle}</h3>
                 <div className="space-y-1 text-base text-slate-500">
-                  <p>{t.contact.weekdays}</p>
+                  <p>{t.contact.hours1}</p>
+                  <p>{t.contact.hours2}</p>
                   <p>{t.contact.saturday}</p>
                   <p className="text-red-400">{t.contact.sunday}</p>
                 </div>

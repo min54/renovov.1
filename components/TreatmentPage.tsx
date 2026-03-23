@@ -82,6 +82,7 @@ const TreatmentPage: React.FC<Props> = ({ id, onBack }) => {
             <p className="text-slate-400 text-sm">어드민에서 내용을 입력해주세요.</p>
           </div>
         )}
+
       </div>
 
     </div>

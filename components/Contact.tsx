@@ -75,7 +75,7 @@ const Contact: React.FC = () => {
                 </div>
                 <div>
                   <h4 className="text-base font-bold mb-0.5 text-slate-900">{t.contact.emailTitle}</h4>
-                  <p className="text-slate-500 text-base">kataroteno@gmail.com</p>
+                  <p className="text-slate-500 text-base">{t.contact.email}</p>
                 </div>
               </div>
 
@@ -85,10 +85,11 @@ const Contact: React.FC = () => {
                 </div>
                 <div className="w-full">
                   <h4 className="text-base font-bold mb-1 text-slate-900">{t.contact.hoursTitle}</h4>
-                  <div className="flex flex-wrap gap-x-6 text-base text-slate-500">
-                    <span>{t.contact.weekdays}</span>
-                    <span>{t.contact.saturday}</span>
-                    <span className="text-red-500">{t.contact.sunday}</span>
+                  <div className="space-y-0.5 text-base text-slate-500">
+                    <p>{t.contact.hours1}</p>
+                    <p>{t.contact.hours2}</p>
+                    <p>{t.contact.saturday}</p>
+                    <p className="text-red-500">{t.contact.sunday}</p>
                   </div>
                 </div>
               </div>

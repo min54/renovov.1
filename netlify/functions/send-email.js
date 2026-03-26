@@ -13,7 +13,7 @@ exports.handler = async (event) => {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        from: 'onboarding@resend.dev',
+        from: 'noreply@renovoh.net',
         to: ['belleamie1122@naver.com', 'kataroteno@gmail.com'],
         subject: `[벨아미리노보] 새 문의가 도착했습니다 - ${name}`,
         html: `

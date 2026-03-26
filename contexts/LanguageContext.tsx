@@ -19,7 +19,11 @@ function getServiceOverrides(): Record<string, { title: string; desc: string }> 
 }
 
 export const LanguageProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
-    const [language, setLanguage] = useState<Language>('KR');
+    const [language, setLanguage] = useState<Language>(() => {
+        const browserLang = navigator.language || '';
+        if (browserLang.startsWith('ja')) return 'JP';
+        return 'KR';
+    });
     const [serviceOverrides, setServiceOverrides] = useState(getServiceOverrides);
 
     useEffect(() => {

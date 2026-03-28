@@ -3,7 +3,28 @@ exports.handler = async (event) => {
     return { statusCode: 405, body: 'Method Not Allowed' };
   }
 
-  const { name, email, phone, service, message } = JSON.parse(event.body || '{}');
+  const { name, email, phone, service, message, website, _ts } = JSON.parse(event.body || '{}');
+
+  // 허니팟 체크: 봇이 채운 필드가 있으면 가짜 성공 반환
+  if (website) {
+    return { statusCode: 200, body: 'OK' };
+  }
+
+  // 시간 체크: 제출까지 3초 미만이면 봇으로 판단
+  if (_ts && Date.now() - _ts < 3000) {
+    return { statusCode: 200, body: 'OK' };
+  }
+
+  // 필수 필드 검증
+  if (!name || !email) {
+    return { statusCode: 400, body: 'Missing required fields' };
+  }
+
+  // 스팸 패턴 감지: 이름이나 메시지가 의미없는 랜덤 문자열인지 체크
+  const randomPattern = /^[a-zA-Z]{10,}$/;
+  if (randomPattern.test(name) || (message && randomPattern.test(message))) {
+    return { statusCode: 200, body: 'OK' };
+  }
 
   try {
     const res = await fetch('https://api.resend.com/emails', {

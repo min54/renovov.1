@@ -7,16 +7,26 @@ import { supabase } from '../services/supabase';
 const Contact: React.FC = () => {
   const { t } = useLanguage();
   const [form, setForm] = useState({ name: '', email: '', phone: '', service: '', message: '' });
+  const [honeypot, setHoneypot] = useState('');
+  const [formLoadedAt] = useState(() => Date.now());
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
 
-  const encode = (data: Record<string, string>) =>
-    Object.keys(data)
-      .map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
-      .join('&');
-
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+
+    // 허니팟: 봇이 숨겨진 필드를 채웠으면 가짜 성공
+    if (honeypot) {
+      setSubmitted(true);
+      return;
+    }
+
+    // 시간 체크: 3초 이내 제출은 봇으로 판단
+    if (Date.now() - formLoadedAt < 3000) {
+      setSubmitted(true);
+      return;
+    }
+
     setLoading(true);
     try {
       await supabase.from('contact_submissions').insert([{
@@ -31,7 +41,7 @@ const Contact: React.FC = () => {
       await fetch('/.netlify/functions/send-email', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(form),
+        body: JSON.stringify({ ...form, _ts: formLoadedAt }),
       });
 
       setSubmitted(true);
@@ -123,9 +133,21 @@ const Contact: React.FC = () => {
                     onSubmit={handleSubmit}
                   >
                     <input type="hidden" name="form-name" value="contact" />
-                    <p className="hidden">
-                      <input name="bot-field" />
-                    </p>
+                    <div
+                      aria-hidden="true"
+                      style={{ position: 'absolute', left: '-9999px', top: '-9999px', height: 0, overflow: 'hidden' }}
+                    >
+                      <label htmlFor="website">Website</label>
+                      <input
+                        type="text"
+                        id="website"
+                        name="website"
+                        tabIndex={-1}
+                        autoComplete="off"
+                        value={honeypot}
+                        onChange={(e) => setHoneypot(e.target.value)}
+                      />
+                    </div>
 
                     <div className="grid grid-cols-2 gap-3">
                       <input

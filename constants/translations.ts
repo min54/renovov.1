@@ -1240,6 +1240,65 @@ export const translations = {
 <details>
 <summary>시술 전후 주의사항이 있나요?</summary>
 <div class="answer"><p>공복보다는 가볍게 식사 후 방문하시는 것을 권장합니다. 시술 당일 과도한 음주와 격렬한 운동은 피해 주세요. 혈액 희석제를 복용 중이거나 임신·수유 중인 경우 반드시 사전에 의료진에게 알려 주시기 바랍니다.</p></div>
+</details>`, price: '' },
+                23: { title: '노바스템 줄기세포 스킨부스터', desc: `<div style="background:linear-gradient(135deg,#f5f3ff 0%,#ede9fe 100%);border-radius:20px;padding:1.5rem 1.75rem;margin-bottom:0.25rem;"><p style="margin:0;font-size:0.95rem;color:#4c1d95;line-height:1.9;font-weight:500;">환자 본인의 혈액에서 추출한 자가 줄기세포로 완성하는 탄력 안티에이징 스킨부스터로, 배양 과정 없이 최소 조작을 통해 당일 시술이 가능한 안전성 높은 재생 시술입니다.</p></div>
+
+<h2>시술 원리</h2>
+<p>노바스템은 환자 본인의 혈액에서 줄기세포를 추출해 활용하는 <strong>자가 세포 기반 스킨부스터</strong>입니다. 특수 키트와 <strong>3단 챔버 구조</strong>를 통해 유효 세포(Buffy Coat)를 정밀하게 농축하여 주입하며, 주입된 세포는 <strong>파라크라인 효과(Paracrine Effect)</strong>로 '신호 전달 기지' 역할을 하며 주변 세포의 재생을 유도하고 면역을 조절합니다. 또한 <strong>호밍 효과(Homing)</strong>로 손상된 부위를 스스로 찾아가 혈관을 재생하고 조직을 복구합니다.</p>
+
+<h2>주요 효과</h2>
+<ul>
+<li>콜라겐 생성 촉진을 통한 피부 탄력 개선과 주름 감소</li>
+<li>흉터 재생 및 피부톤 개선 등 안티에이징 효과</li>
+<li>무릎 골관절염의 연골 재생 및 통증 완화</li>
+<li>상과염(테니스 엘보·골퍼 엘보) 치료 보조</li>
+<li>면역력 강화, 만성 피로 개선, 탈모 완화 및 혈관 건강 증진</li>
+</ul>
+
+<h2>이런 분께 추천드립니다</h2>
+<ul>
+<li>피부 탄력 저하, 주름, 흉터 재생이 필요하신 분</li>
+<li>무릎 골관절염, 테니스 엘보, 골퍼 엘보 등 관절 통증으로 불편을 겪으시는 분</li>
+<li>면역력 저하와 만성 피로, 무기력증으로 전신 활력 회복이 필요하신 분</li>
+<li>두피 모낭 환경을 개선하여 탈모 완화를 원하시는 분</li>
+<li>자가 세포를 이용한 안전하고 신속한 시술을 선호하시는 분</li>
+</ul>
+
+<h2>자주 묻는 질문 FAQ</h2>
+
+<details>
+<summary>한 번만 맞아도 피부 탄력이 눈에 띄게 좋아지나요?</summary>
+<div class="answer"><p>노바스템은 자가혈 줄기세포를 활용해 콜라겐 생성을 촉진하고 탄력 안티에이징을 돕는 시술입니다. 1회 시술로도 즉각적인 개선을 체감하실 수 있으나, 피부 상태에 따라 차이가 있으며 콜라겐 재생은 4~8주에 걸쳐 점진적으로 나타납니다. 지속적인 효과 유지를 위해 정기적인 시술을 권장드립니다.</p></div>
+</details>
+
+<details>
+<summary>피부톤 개선이나 흉터 재생에도 효과가 있나요?</summary>
+<div class="answer"><p>줄기세포의 파라크라인 효과(세포 간 신호 전달)가 피부 재생과 멜라닌 억제에 도움을 주어 피부톤 개선과 흉터 재생에 효과를 기대하실 수 있습니다. 여드름 흉터, 색소침착, 칙칙한 피부톤으로 고민하시는 분들께도 추천드립니다.</p></div>
+</details>
+
+<details>
+<summary>내 피를 뽑아서 시술한다는데, 과정이 어떻게 되나요?</summary>
+<div class="answer"><p>먼저 소량의 자가혈을 채혈한 후, 특수 키트의 3단 챔버 구조를 통해 유효 줄기세포(Buffy Coat)를 고농축으로 분리합니다. 분리된 세포를 얼굴 전체에 주입하며, 채혈부터 주입까지 전체 소요 시간은 약 30~40분 정도입니다.</p></div>
+</details>
+
+<details>
+<summary>시술할 때 많이 아픈가요? 마취가 필요한가요?</summary>
+<div class="answer"><p>시술 전 마취 크림을 도포하여 통증을 최소화합니다. 시술 후 일시적인 엠보싱(올록볼록)이나 가벼운 멍, 붓기가 1~3일 정도 나타날 수 있으며 대부분 자연스럽게 가라앉습니다.</p></div>
+</details>
+
+<details>
+<summary>6cc 용량이면 얼굴 전체에 다 맞기에 충분한가요?</summary>
+<div class="answer"><p>네, 일반적인 스킨부스터 용도로 6cc 분량이면 얼굴 전체를 충분히 커버할 수 있습니다. 본인의 피부 고민 부위(볼, 이마, 눈가, 입가 등)에 따라 주입량을 조절하여 최적의 결과를 이끌어냅니다.</p></div>
+</details>
+
+<details>
+<summary>부작용 위험은 없나요? 정말 안전한가요?</summary>
+<div class="answer"><p>본인의 세포를 사용하는 자가 줄기세포 시술이므로 필러나 합성 물질 대비 면역 거부 반응이나 부작용 위험이 현저히 낮습니다. 드물게 주사 부위에 일시적인 멍이나 붓기가 생길 수 있으나 수일 내 자연스럽게 호전됩니다.</p></div>
+</details>
+
+<details>
+<summary>배양하지 않은 줄기세포가 정말 효과가 있나요?</summary>
+<div class="answer"><p>노바스템은 배양 과정 없이 당일 추출하여 주입하는 '최소 조작(Minimal Manipulation)' 방식으로, 세포의 생존율과 활성도가 높은 상태로 주입됩니다. 배양 과정에서 발생할 수 있는 변형 위험 없이 안전하고 신선한 세포를 그대로 활용하는 과학적으로 검증된 시술입니다.</p></div>
 </details>`, price: '' }
             }
         },
@@ -2550,6 +2609,65 @@ export const translations = {
 <details>
 <summary>Are there any pre/post-treatment precautions?</summary>
 <div class="answer"><p>A light meal before your visit is recommended rather than coming on an empty stomach. Avoid excessive alcohol and vigorous exercise on the day of treatment. Please inform the medical team beforehand if you are taking blood thinners or are pregnant or breastfeeding.</p></div>
+</details>`, price: '' },
+                23: { title: 'NovaStem Stem Cell Skin Booster', desc: `<div style="background:linear-gradient(135deg,#f5f3ff 0%,#ede9fe 100%);border-radius:20px;padding:1.5rem 1.75rem;margin-bottom:0.25rem;"><p style="margin:0;font-size:0.95rem;color:#4c1d95;line-height:1.9;font-weight:500;">An elasticity-boosting anti-aging skin booster crafted from the patient's own autologous stem cells — a highly safe regenerative treatment that requires no culturing and can be performed on the same day through minimal manipulation.</p></div>
+
+<h2>How It Works</h2>
+<p>NovaStem is an <strong>autologous cell-based skin booster</strong> that extracts and utilizes stem cells directly from the patient's own blood. A specialized kit with a <strong>3-stage chamber structure</strong> precisely concentrates effective cells (Buffy Coat) for injection. Once introduced, these cells perform a <strong>Paracrine Effect</strong>, acting as a "signal relay station" that induces surrounding cell regeneration and modulates immune response. Additionally, the <strong>Homing Effect</strong> allows the stem cells to autonomously locate damaged areas, regenerating blood vessels and restoring tissue.</p>
+
+<h2>Key Benefits</h2>
+<ul>
+<li>Improved skin elasticity and wrinkle reduction through collagen stimulation</li>
+<li>Anti-aging effects including scar regeneration and skin tone improvement</li>
+<li>Cartilage regeneration and pain relief for knee osteoarthritis</li>
+<li>Supportive treatment for epicondylitis (tennis elbow, golfer's elbow)</li>
+<li>Enhanced immunity, chronic fatigue relief, hair loss mitigation, and vascular health</li>
+</ul>
+
+<h2>Recommended For</h2>
+<ul>
+<li>Those experiencing loss of skin elasticity, wrinkles, or in need of scar regeneration</li>
+<li>Those suffering from joint pain such as knee osteoarthritis, tennis elbow, or golfer's elbow</li>
+<li>Those needing restored vitality due to reduced immunity, chronic fatigue, or lethargy</li>
+<li>Those wishing to improve scalp follicle conditions and mitigate hair loss</li>
+<li>Those who prefer a safe and swift procedure using their own cells</li>
+</ul>
+
+<h2>Frequently Asked Questions</h2>
+
+<details>
+<summary>Will a single session visibly improve skin elasticity?</summary>
+<div class="answer"><p>NovaStem utilizes autologous blood-derived stem cells to stimulate collagen production and support elasticity anti-aging. While immediate improvement may be felt after just one session, results vary by skin condition, and collagen regeneration progresses gradually over 4–8 weeks. Regular treatments are recommended to maintain lasting effects.</p></div>
+</details>
+
+<details>
+<summary>Does it also help with skin tone and scar regeneration?</summary>
+<div class="answer"><p>The Paracrine Effect (inter-cellular signaling) of stem cells supports skin regeneration and melanin suppression, offering improvements in skin tone and scar regeneration. It is also recommended for those troubled by acne scars, pigmentation, or dull skin tone.</p></div>
+</details>
+
+<details>
+<summary>How does the procedure work since my own blood is drawn?</summary>
+<div class="answer"><p>A small amount of autologous blood is drawn first, after which the 3-stage chamber structure of the specialized kit separates the effective stem cells (Buffy Coat) in high concentration. The isolated cells are then injected across the full face, with the entire process from blood draw to injection taking approximately 30–40 minutes.</p></div>
+</details>
+
+<details>
+<summary>Is it very painful? Is anesthesia required?</summary>
+<div class="answer"><p>A numbing cream is applied prior to treatment to minimize discomfort. Temporary embossing (raised bumps), mild bruising, or swelling may appear for 1–3 days after treatment, but these typically subside naturally.</p></div>
+</details>
+
+<details>
+<summary>Is 6cc enough to cover the entire face?</summary>
+<div class="answer"><p>Yes, 6cc is sufficient to fully cover the face for general skin booster purposes. The injection volume is adjusted based on your specific concerns (cheeks, forehead, eye area, mouth area) to deliver optimal results.</p></div>
+</details>
+
+<details>
+<summary>Are there any side effect risks? Is it truly safe?</summary>
+<div class="answer"><p>Since this is an autologous stem cell treatment using your own cells, the risk of immune rejection or side effects is significantly lower compared to fillers or synthetic substances. Rare temporary bruising or swelling at the injection site may occur but naturally resolves within a few days.</p></div>
+</details>
+
+<details>
+<summary>Are non-cultured stem cells truly effective?</summary>
+<div class="answer"><p>NovaStem uses a "Minimal Manipulation" method where cells are extracted and injected on the same day without culturing, preserving high cell viability and activity during injection. This scientifically validated treatment utilizes safe, fresh cells without the risk of modifications that may occur during culturing.</p></div>
 </details>`, price: '' }
             }
         },
@@ -3860,6 +3978,65 @@ export const translations = {
 <details>
 <summary>施術前後の注意事項はありますか？</summary>
 <div class="answer"><p>空腹での来院より軽食を取ってからのご来院をおすすめします。当日の過度なアルコールと激しい運動は控えてください。血液をさらさらにする薬の服用中や妊娠・授乳中の方は事前に医療スタッフにお知らせください。</p></div>
+</details>`, price: '' },
+                23: { title: 'ノバステム 幹細胞スキンブースター', desc: `<div style="background:linear-gradient(135deg,#f5f3ff 0%,#ede9fe 100%);border-radius:20px;padding:1.5rem 1.75rem;margin-bottom:0.25rem;"><p style="margin:0;font-size:0.95rem;color:#4c1d95;line-height:1.9;font-weight:500;">患者ご自身の血液から抽出した自己幹細胞で完成させるハリ・アンチエイジングスキンブースターで、培養過程なしに最小操作で当日施術が可能な安全性の高い再生施術です。</p></div>
+
+<h2>施術原理</h2>
+<p>ノバステムは患者様ご自身の血液から幹細胞を抽出して活用する<strong>自己細胞ベースのスキンブースター</strong>です。特殊キットと<strong>3段チャンバー構造</strong>により有効細胞（Buffy Coat）を精密に濃縮して注入し、注入された細胞は<strong>パラクライン効果（Paracrine Effect）</strong>で「信号伝達基地」の役割を果たし、周辺細胞の再生を誘導し免疫を調節します。また、<strong>ホーミング効果（Homing）</strong>により損傷部位を自ら見つけて血管を再生し組織を修復します。</p>
+
+<h2>主な効果</h2>
+<ul>
+<li>コラーゲン生成促進による肌のハリ改善としわの軽減</li>
+<li>傷跡の再生および肌トーン改善などのアンチエイジング効果</li>
+<li>膝の変形性関節症の軟骨再生および痛み緩和</li>
+<li>上顆炎（テニス肘・ゴルフ肘）の治療補助</li>
+<li>免疫力強化、慢性疲労改善、抜け毛緩和および血管健康増進</li>
+</ul>
+
+<h2>このような方におすすめ</h2>
+<ul>
+<li>肌のハリ低下、しわ、傷跡の再生が必要な方</li>
+<li>膝の変形性関節症、テニス肘、ゴルフ肘などの関節痛でお困りの方</li>
+<li>免疫力低下や慢性疲労、無気力で全身の活力回復が必要な方</li>
+<li>頭皮の毛包環境を改善して抜け毛の緩和を望む方</li>
+<li>自己細胞を利用した安全で迅速な施術をお好みの方</li>
+</ul>
+
+<h2>よくあるご質問 FAQ</h2>
+
+<details>
+<summary>1回だけでも肌のハリが目に見えて良くなりますか？</summary>
+<div class="answer"><p>ノバステムは自己血幹細胞を活用してコラーゲン生成を促進し、ハリ・アンチエイジングをサポートする施術です。1回の施術でも即時的な改善を実感される方もいらっしゃいますが、肌の状態により個人差があり、コラーゲン再生は4〜8週間かけて徐々に現れます。持続的な効果維持のため定期的な施術を推奨いたします。</p></div>
+</details>
+
+<details>
+<summary>肌トーン改善や傷跡の再生にも効果がありますか？</summary>
+<div class="answer"><p>幹細胞のパラクライン効果（細胞間の信号伝達）が肌の再生とメラニン抑制を助け、肌トーン改善と傷跡の再生に効果が期待できます。ニキビ跡、色素沈着、くすんだ肌トーンでお悩みの方にもおすすめです。</p></div>
+</details>
+
+<details>
+<summary>自分の血液を採血して施術すると聞きましたが、どのような流れですか？</summary>
+<div class="answer"><p>まず少量の自己血を採血した後、特殊キットの3段チャンバー構造を通して有効幹細胞（Buffy Coat）を高濃縮で分離します。分離された細胞を顔全体に注入し、採血から注入まで全体の所要時間は約30〜40分程度です。</p></div>
+</details>
+
+<details>
+<summary>施術時は痛みが強いですか？麻酔は必要ですか？</summary>
+<div class="answer"><p>施術前に麻酔クリームを塗布して痛みを最小限に抑えます。施術後は一時的なエンボッシング（凹凸）や軽度の内出血、腫れが1〜3日ほど見られる場合がありますが、大部分は自然に落ち着きます。</p></div>
+</details>
+
+<details>
+<summary>6ccの容量で顔全体をカバーできますか？</summary>
+<div class="answer"><p>はい。一般的なスキンブースター用途では6ccあれば顔全体を十分にカバーできます。お客様のお悩みの部位（頬、額、目元、口元など）に応じて注入量を調整し、最適な結果を引き出します。</p></div>
+</details>
+
+<details>
+<summary>副作用のリスクはありませんか？本当に安全ですか？</summary>
+<div class="answer"><p>ご自身の細胞を使用する自己幹細胞施術であるため、フィラーや合成物質に比べて免疫拒絶反応や副作用のリスクが非常に低いです。まれに注射部位に一時的な内出血や腫れが生じることがありますが、数日以内に自然に改善します。</p></div>
+</details>
+
+<details>
+<summary>培養していない幹細胞でも本当に効果がありますか？</summary>
+<div class="answer"><p>ノバステムは培養過程なしに当日抽出して注入する「最小操作（Minimal Manipulation）」方式で、細胞の生存率と活性度が高い状態で注入されます。培養過程で起こり得る変形リスクなしに安全で新鮮な細胞をそのまま活用する科学的に検証された施術です。</p></div>
 </details>`, price: '' }
             }
         },

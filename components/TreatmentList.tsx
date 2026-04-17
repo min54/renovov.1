@@ -3,7 +3,7 @@ import { useLanguage } from '../contexts/LanguageContext';
 import FadeIn from './FadeIn';
 
 const groupIds = [
-  ['1', '2', '3'],
+  ['1', '2', '3', '23'],
   ['4', '5', '6', '7', '8'],
   ['14', '15', '16', '17', '18'],
   ['11', '12', '13'],

@@ -3,7 +3,7 @@ import { ArrowLeft } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
 
 const groups = [
-  { label: 'Skin Booster', labelKr: '스킨 부스터', ids: ['1', '2', '3'] },
+  { label: 'Skin Booster', labelKr: '스킨 부스터', ids: ['1', '2', '3', '23'] },
   { label: 'Lifting',      labelKr: '리프팅',       ids: ['4', '5', '6', '7', '8'] },
   { label: 'Removal',      labelKr: '제거',          ids: ['9', '10'] },
   { label: 'Filler',       labelKr: '필러',          ids: ['11', '12', '13'] },

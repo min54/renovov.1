@@ -1419,7 +1419,153 @@ export const translations = {
 <details>
 <summary>몇 회 시술을 권장하시나요?</summary>
 <div class="answer"><p>1회 시술로도 충분히 효과를 체감하실 수 있지만, 피부 상태·나이·목표에 따라 3~6개월 간격으로 2~3회 시술하시면 재생 효과가 누적되어 더욱 깊고 오래 지속됩니다. 초진 상담 시 피부 진단과 함께 개인 맞춤 시술 플랜을 설계해 드립니다.</p></div>
-</details>`, price: '' }
+</details>`, price: '' },
+                24: { title: '울쎄라피 프라임', desc: `<div style="background:linear-gradient(135deg,#f5f3ff 0%,#ede9fe 100%);border-radius:20px;padding:1.5rem 1.75rem;margin-bottom:0.25rem;"><p style="margin:0;font-size:0.95rem;color:#4c1d95;line-height:1.9;font-weight:500;">9년 만에 업그레이드된 울쎄라의 차세대 HIFU 리프팅 장비로, 기존의 강력한 SMAS 리프팅 효과는 그대로 유지하면서 시술 속도, 통증, 정밀도까지 모두 개선한 프리미엄 비수술 리프팅 시술입니다.</p></div>
+
+<h2>시술 원리</h2>
+<p>울쎄라피 프라임은 <strong>HIFU(고강도 집속 초음파)</strong> 기술을 기반으로 합니다. 돋보기로 햇빛을 모으듯 초음파 에너지를 피부 속 깊은 곳에 정밀하게 집중시켜 <strong>60~70도의 최적의 열 응고점</strong>을 형성하는 것이 핵심입니다. 전용 팁을 통해 <strong>진피층(1.5mm·3.0mm)</strong>부터 피부의 기초 공사를 담당하는 <strong>근막층(SMAS, 4.5mm)</strong>까지 에너지를 정확히 전달하여 조직의 수축과 재생을 동시에 유도합니다. 전달된 열에너지는 노화된 콜라겐을 변성시키고 신체의 자연 치유 반응을 통해 새로운 콜라겐과 엘라스틴의 생성을 촉진합니다.</p>
+
+<h2>핵심 기술 특징</h2>
+<ul>
+<li><strong>DeepSee™ 실시간 영상 기술:</strong> 시술자가 환자의 피부 구조, 지방층, 신경, 혈관을 실시간 초음파 영상으로 직접 확인하며 시술합니다. 프라임 버전은 기존 대비 화면이 35% 커지고 최대 8mm 깊이까지 관찰이 가능해 개인별 피부 상태에 최적화된 맞춤 시술을 구현합니다.</li>
+<li><strong>정밀 에너지 타겟팅:</strong> 진피층과 SMAS 근막층에 정확하게 에너지를 집중시켜, 조직 손상 없이 가장 효과적인 깊이에서만 콜라겐 재생 반응을 유도합니다.</li>
+<li><strong>에너지 출력 안정화:</strong> 차세대 기술로 에너지 전달이 균일해져 기존 울쎄라 특유의 찌릿한 통증이 유의미하게 감소했으며 시술 효과의 일관성도 높아졌습니다.</li>
+<li><strong>시술 시간 단축:</strong> 기존 대비 시술 속도가 25% 이상 향상되어 동일한 샷 수 기준 베드 위에 누워 있는 시간이 크게 줄었습니다.</li>
+<li><strong>비수술 SMAS 리프팅:</strong> 수술로만 가능했던 근막층까지 도달하는 유일한 비수술 장비로, 외과적 페이스리프트에 가까운 리프팅 효과를 구현합니다.</li>
+</ul>
+
+<h2>기존 울쎄라와의 차별점</h2>
+<ul>
+<li><strong>시술 속도 25% 향상:</strong> 9년 만에 업그레이드된 차세대 장비로 시술 시간이 단축되어 환자 부담이 줄었습니다.</li>
+<li><strong>영상 화면 35% 확대 + 관찰 깊이 8mm:</strong> DeepSee™ 기술이 강화되어 더 넓은 화면과 더 깊은 관찰이 가능해져 정밀도가 대폭 향상되었습니다.</li>
+<li><strong>통증 수치 약 절반 감소:</strong> 10점 만점 기준 기존 7~8점 수준의 통증이 4~5점 수준으로 완화되어 통증에 민감하신 분도 편안하게 시술받을 수 있습니다.</li>
+<li><strong>정품 인증 시스템 강화:</strong> 환자가 직접 휴대폰 앱(Touch PRIME)으로 장비 정품 여부를 인증할 수 있어 신뢰도가 높아졌습니다.</li>
+</ul>
+
+<h2>시술 정보</h2>
+<ul>
+<li><strong>시술 시간:</strong> 샷 수에 따라 약 20~60분 (기존 대비 25% 단축)</li>
+<li><strong>마취:</strong> 마취 크림, 국소 마취 주사, 웃음 가스, 수면 마취 등 통증 민감도에 맞춰 선택 가능</li>
+<li><strong>다운타임:</strong> 거의 없음 (시술 당일 일상 복귀 가능)</li>
+<li><strong>효과 발현:</strong> 시술 직후 즉각적인 타이트닝 체감 / 본격적인 리프팅 효과는 2~3개월 후부터 뚜렷 / 6개월 차에 정점</li>
+<li><strong>유지 기간:</strong> 일반적으로 6개월~1년 (일부 연구 18~24개월) / 샷 수가 많을수록 유지 기간 연장</li>
+</ul>
+
+<h2>주요 효과</h2>
+<ul>
+<li><strong>이마·눈썹 리프팅:</strong> 처진 이마와 눈썹이 자연스럽게 올라가 눈매가 또렷해지고 인상이 젊어집니다.</li>
+<li><strong>턱선·이중턱 개선:</strong> 무너진 턱선이 정돈되어 또렷한 V라인으로 변화하고 이중턱 고민이 완화됩니다.</li>
+<li><strong>목선 & 데콜테 라인 개선:</strong> 목 주름과 가슴 윗부분의 처짐·주름이 개선되어 전체적으로 젊은 실루엣이 완성됩니다.</li>
+<li><strong>주름 완화:</strong> 눈가 잔주름, 팔자주름, 마리오네트 라인 등 표정 주름부터 깊은 주름까지 진피 두께 강화로 완화됩니다.</li>
+<li><strong>피부 탄력·밀도:</strong> 진피층에서 콜라겐이 재생되면서 피부가 안에서부터 쫀쫀하게 차오르고 탄력이 살아납니다.</li>
+<li><strong>얼굴 윤곽:</strong> 처진 부위가 당겨지면서 얼굴이 작아 보이고 전반적으로 입체적인 윤곽이 완성됩니다.</li>
+</ul>
+
+<h2>샷 수 가이드</h2>
+<ul>
+<li><strong>100샷:</strong> 눈가·입가 등 국소 부위의 잔주름 집중 개선</li>
+<li><strong>300샷:</strong> 얼굴 전체의 전반적인 탄력 회복 및 리프팅 — 가장 대중적인 기본 샷 수</li>
+<li><strong>600샷:</strong> 얼굴과 목을 포함한 넓은 범위의 복합 리프팅 — 샷 수가 많을수록 조사 밀도가 높아져 유지 기간이 길어집니다.</li>
+</ul>
+
+<h2>이런 분께 추천드립니다</h2>
+<ul>
+<li>처진 턱선과 이중턱을 V라인으로 정돈하고 싶으신 분</li>
+<li>이마·눈썹 처짐, 눈가 잔주름, 팔자·마리오네트 라인, 목 주름 개선을 원하시는 분</li>
+<li>데콜테(가슴 윗부분) 라인의 주름과 탄력 개선을 원하시는 분</li>
+<li>기존 울쎄라의 찌릿한 통증 때문에 시술을 망설였던 분</li>
+<li>기존 울쎄라에서 기대만큼 효과를 보지 못하신 분</li>
+<li>볼살·지방층이 두꺼워 SMAS 근막층까지 강력한 에너지 전달이 필요한 분</li>
+<li>피부가 얇거나 민감해 부작용이 걱정되셨던 분 (정밀 8mm 관찰로 안전성↑)</li>
+<li>30대 후반~60대 초반으로 본격적인 처짐이 시작된 분</li>
+<li>결혼식 등 중요한 행사를 3~6개월 앞두신 분 (시술 3~6개월 후 효과 정점)</li>
+<li>다운타임 없이 빠르게 시술받길 원하는 바쁜 직장인</li>
+</ul>
+
+<h2>시술 과정</h2>
+<ol>
+<li><strong>1단계 — 상담 및 진단:</strong> 전문의가 피부 처짐 정도, 지방층 두께, 리프팅 목표 부위를 확인하고 샷 수와 에너지를 설계합니다.</li>
+<li><strong>2단계 — 정품 인증:</strong> 환자가 직접 Touch PRIME 앱으로 장비와 팁의 정품 여부를 확인합니다.</li>
+<li><strong>3단계 — 마취:</strong> 통증 민감도에 따라 마취 크림, 국소 마취, 웃음 가스, 수면 마취 중 선택합니다.</li>
+<li><strong>4단계 — DeepSee™ 영상 분석:</strong> 실시간 초음파 영상으로 피부층, 신경, 혈관을 확인하며 시술 부위를 정밀하게 매핑합니다.</li>
+<li><strong>5단계 — 시술:</strong> 진피층(1.5mm, 3.0mm)부터 SMAS 근막층(4.5mm)까지 부위별로 에너지를 조사합니다.</li>
+<li><strong>6단계 — 진정 관리:</strong> 시술 후 냉찜질과 진정 관리를 진행하고 홈케어 주의사항을 안내합니다.</li>
+</ol>
+
+<h2>자주 묻는 질문 FAQ</h2>
+
+<details>
+<summary>기존 울쎄라와 무엇이 다른가요?</summary>
+<div class="answer"><p>울쎄라피 프라임은 약 9년 만에 업그레이드된 차세대 장비입니다. 시술 속도가 기존 대비 25% 이상 향상되었고, DeepSee™ 실시간 영상 화면이 35% 커지면서 관찰 깊이도 최대 8mm까지 확장되어 정밀도가 크게 높아졌습니다. 또한 에너지 출력 안정화 기술로 기존 울쎄라 특유의 찌릿한 통증이 유의미하게 감소해 더 편안하게 시술받으실 수 있습니다.</p></div>
+</details>
+
+<details>
+<summary>효과는 언제부터 나타나고 얼마나 유지되나요?</summary>
+<div class="answer"><p>시술 직후부터 즉각적인 타이트닝을 느끼실 수 있으며, 본격적인 리프팅 효과는 콜라겐이 재생되는 2~3개월 후부터 뚜렷하게 나타나고 6개월 차에 정점에 도달합니다. 유지 기간은 개인차와 샷 수에 따라 다르지만 보통 6개월~1년이며, 일부 연구에서는 18~24개월까지 지속된다고 보고되기도 합니다.</p></div>
+</details>
+
+<details>
+<summary>통증이 얼마나 되나요? 마취 옵션이 있나요?</summary>
+<div class="answer"><p>기존 울쎄라의 통증이 10점 만점에 약 7~8점이었다면, 프라임은 4~5점 수준으로 개선되었습니다. 통증 민감도에 따라 마취 크림, 국소 마취 주사, 웃음 가스, 수면 마취 등 다양한 옵션을 선택하실 수 있어 편안하게 시술받을 수 있습니다.</p></div>
+</details>
+
+<details>
+<summary>붓기와 다운타임은 어느 정도인가요?</summary>
+<div class="answer"><p>시술 후 붓기는 조직 재생 과정에서 발생하는 정상적인 치유 반응으로, 보통 3~7일 이내에 자연스럽게 가라앉습니다. 다운타임이 거의 없어 시술 당일부터 일상생활에 지장이 없으며, 가벼운 메이크업도 다음 날부터 가능합니다.</p></div>
+</details>
+
+<details>
+<summary>나에게 맞는 샷 수는 어떻게 결정되나요?</summary>
+<div class="answer"><p>샷 수는 얼굴 크기보다 탄력 저하 정도와 시술 부위에 따라 결정됩니다. 일반적으로 눈가·입가 등 국소 부위는 100샷, 얼굴 전체 탄력 회복은 300샷, 얼굴과 목을 포함한 복합 리프팅은 600샷이 권장됩니다. 샷 수가 많을수록 조사 밀도가 높아져 유지 기간이 길어지는 경향이 있으며, 정확한 샷 수는 초진 상담에서 의료진이 피부 상태를 보고 설계합니다.</p></div>
+</details>
+
+<details>
+<summary>부작용 위험은 없나요?</summary>
+<div class="answer"><p>DeepSee™ 실시간 영상으로 신경선과 혈관 위치를 정확히 파악하며 시술하기 때문에, 타겟층에만 정확하게 에너지를 전달할 수 있어 볼패임, 화상, 신경 손상 등의 부작용 위험이 최소화됩니다. 특히 프라임은 관찰 깊이가 8mm까지 확장되어 얇고 민감한 피부에도 안전하게 시술할 수 있습니다.</p></div>
+</details>
+
+<details>
+<summary>정품 장비인지 어떻게 확인하나요?</summary>
+<div class="answer"><p>고가 시술인 만큼 정품 장비와 팁 사용 여부 확인이 매우 중요합니다. 환자분이 직접 휴대폰으로 <strong>Touch PRIME</strong> 앱을 통해 장비와 팁의 정품 여부를 시술 전에 인증하실 수 있으며, 멀츠코리아 공식 홈페이지에서 정품 인증 참여 병원 여부도 사전에 확인할 수 있습니다.</p></div>
+</details>
+
+<details>
+<summary>다른 리프팅 시술과 병행해도 되나요?</summary>
+<div class="answer"><p>네, 가장 대중적인 조합은 <strong>울써마지(울쎄라피 + 써마지 FLX)</strong>입니다. 울쎄라피 프라임이 피부 깊은 곳의 SMAS 근막층을 타겟한다면, 써마지 FLX는 표피~진피 상부의 탄력을 개선하여 서로 보완적으로 작용해 리프팅과 탄력 효과가 극대화됩니다. 실리프팅, 인모드, 스킨 부스터와도 병행 가능하며 상담 시 맞춤 플랜을 설계해 드립니다.</p></div>
+</details>
+
+<details>
+<summary>결혼식을 앞두고 있는데 언제 시술받는 게 좋을까요?</summary>
+<div class="answer"><p>울쎄라피 프라임은 시술 2~3개월 후부터 효과가 뚜렷해지고 6개월 차에 정점에 도달하므로, 결혼식 등 중요한 행사를 앞두고 계시다면 <strong>3~6개월 전 시술</strong>을 권장드립니다. 다운타임이 거의 없어 시술 직후에도 일상 복귀가 빠르지만, 최상의 리프팅 효과를 보여드리려면 콜라겐 재생 시간을 충분히 확보하시는 것이 좋습니다.</p></div>
+</details>
+
+<h2>시술 전후 주의사항</h2>
+
+<h3>1. 시술 직후 반응 (정상적인 현상)</h3>
+<ul>
+<li><strong>붉어짐·열감:</strong> 시술 부위가 일시적으로 붉어지거나 따뜻해질 수 있으며 대부분 수 시간 내에 가라앉습니다.</li>
+<li><strong>붓기:</strong> 조직 재생 과정에서 발생하는 정상 반응으로 3~7일 이내에 자연스럽게 완화됩니다.</li>
+<li><strong>약간의 뻐근함:</strong> 근막층에 에너지가 전달된 후 일시적으로 뻐근한 느낌이 있을 수 있으나 1~2주 내 사라집니다.</li>
+</ul>
+
+<h3>2. 세안 및 메이크업</h3>
+<ul>
+<li><strong>당일 세안:</strong> 시술 당일부터 미지근한 물로 가벼운 세안이 가능합니다.</li>
+<li><strong>메이크업:</strong> 다음 날부터 가능하며 강한 클렌징이나 스크럽은 2~3일간 피해주세요.</li>
+</ul>
+
+<h3>3. 생활 및 환경 관리</h3>
+<ul>
+<li><strong>열 자극 주의:</strong> 시술 후 1~2주간 사우나, 찜질방, 뜨거운 목욕은 피해주세요. 열감이 재생 과정에 영향을 줄 수 있습니다.</li>
+<li><strong>자외선 차단:</strong> 재생 중인 피부를 보호하기 위해 SPF 30 이상의 자외선 차단제를 꼼꼼히 바르세요.</li>
+<li><strong>격한 마사지 금지:</strong> 시술 부위를 강하게 문지르거나 누르는 마사지는 2주간 삼가주세요.</li>
+</ul>
+
+<h3>4. 금주·금연 및 복용 주의</h3>
+<p>시술 후 최소 3~5일간 음주와 흡연을 멀리해 주세요. 혈액 희석제(아스피린 등)를 복용 중이시거나 임신·수유 중이신 경우 반드시 사전에 의료진에게 알려 주시기 바랍니다.</p>
+
+<h3>5. 보습과 콜라겐 재생 관리</h3>
+<p>시술 후 피부가 일시적으로 건조하게 느껴질 수 있습니다. 수분 크림과 재생 크림을 충분히 사용하시고, 단백질 섭취를 늘리면 콜라겐 재생에 도움이 됩니다. 시술 후 1~3개월 사이가 콜라겐이 가장 활발하게 재생되는 시기이므로 꾸준한 관리가 중요합니다.</p>`, price: '' }
             }
         },
         contact: {
@@ -2908,7 +3054,153 @@ export const translations = {
 <details>
 <summary>How many sessions are recommended?</summary>
 <div class="answer"><p>A single session already delivers meaningful results, but 2–3 sessions spaced 3–6 months apart — adjusted for your skin condition, age, and goals — produce cumulative, deeper, and longer-lasting regenerative effects. At your initial consultation, a personalized treatment plan will be designed alongside a full skin analysis.</p></div>
-</details>`, price: '' }
+</details>`, price: '' },
+                24: { title: 'Ultherapy PRIME', desc: `<div style="background:linear-gradient(135deg,#f5f3ff 0%,#ede9fe 100%);border-radius:20px;padding:1.5rem 1.75rem;margin-bottom:0.25rem;"><p style="margin:0;font-size:0.95rem;color:#4c1d95;line-height:1.9;font-weight:500;">A next-generation HIFU lifting device — Ulthera's upgrade after 9 years — that preserves the powerful SMAS lifting effect of the original while dramatically improving treatment speed, comfort, and precision. A premium non-surgical lifting solution.</p></div>
+
+<h2>How It Works</h2>
+<p>Ultherapy PRIME is based on <strong>HIFU (High-Intensity Focused Ultrasound)</strong> technology. Like a magnifying glass focusing sunlight, ultrasound energy is precisely concentrated deep within the skin to form <strong>optimal thermal coagulation points at 60–70°C</strong>. Dedicated transducers deliver energy accurately from the <strong>dermal layers (1.5mm, 3.0mm)</strong> down to the <strong>SMAS fascia layer (4.5mm)</strong> — the structural foundation of skin — inducing simultaneous tissue contraction and regeneration. The delivered heat denatures aged collagen while triggering the body's natural healing response to stimulate the production of new collagen and elastin.</p>
+
+<h2>Core Technology Features</h2>
+<ul>
+<li><strong>DeepSee™ Real-Time Imaging:</strong> The practitioner visualizes the patient's skin structure, fat layer, nerves, and blood vessels in real-time ultrasound imaging during treatment. The PRIME version delivers a 35% larger screen and expanded viewing depth up to 8mm, enabling highly personalized treatments tailored to individual skin conditions.</li>
+<li><strong>Precise Energy Targeting:</strong> Energy is concentrated exactly at the dermis and SMAS layers, inducing collagen regeneration at the most effective depths without damaging surrounding tissue.</li>
+<li><strong>Stabilized Energy Output:</strong> Next-generation technology delivers more uniform energy, significantly reducing the characteristic sting of the original Ulthera while improving treatment consistency.</li>
+<li><strong>Faster Treatment Time:</strong> Treatment speed is improved by over 25% compared to the previous generation, dramatically reducing time spent on the treatment bed for the same shot count.</li>
+<li><strong>Non-Surgical SMAS Lifting:</strong> The only non-surgical device capable of reaching the SMAS fascia — previously accessible only through surgery — delivering lifting results approaching those of a surgical facelift.</li>
+</ul>
+
+<h2>What's New vs. Original Ulthera</h2>
+<ul>
+<li><strong>25% Faster Treatment:</strong> As a next-generation device upgraded after 9 years, treatment time is significantly reduced, easing patient burden.</li>
+<li><strong>35% Larger Screen + 8mm Viewing Depth:</strong> Enhanced DeepSee™ technology enables a broader, deeper view for dramatically improved precision.</li>
+<li><strong>Pain Reduced Nearly by Half:</strong> Pain levels that previously rated 7–8 out of 10 are now reduced to approximately 4–5, making the treatment much more comfortable for pain-sensitive patients.</li>
+<li><strong>Enhanced Authenticity Verification:</strong> Patients can directly verify device authenticity via the Touch PRIME mobile app, increasing trust and transparency.</li>
+</ul>
+
+<h2>Treatment Information</h2>
+<ul>
+<li><strong>Treatment Time:</strong> Approximately 20–60 minutes depending on shot count (25% faster than before)</li>
+<li><strong>Anesthesia:</strong> Options include numbing cream, local injection, laughing gas, or sleep sedation — selected based on pain sensitivity</li>
+<li><strong>Downtime:</strong> Minimal — same-day return to daily life is possible</li>
+<li><strong>Results Timeline:</strong> Immediate tightening felt right after treatment / Full lifting effect becomes visible 2–3 months later / Peak effect at 6 months</li>
+<li><strong>Duration:</strong> Typically 6 months–1 year (some studies report 18–24 months) / Higher shot counts extend duration</li>
+</ul>
+
+<h2>Key Benefits</h2>
+<ul>
+<li><strong>Forehead & Brow Lifting:</strong> Drooping forehead and brows are naturally lifted, sharpening the eye area and creating a more youthful expression.</li>
+<li><strong>Jawline & Double Chin Improvement:</strong> A sagging jawline is redefined into a clear V-line while double chin concerns are significantly reduced.</li>
+<li><strong>Neck & Décolleté Enhancement:</strong> Neck wrinkles and décolleté sagging are improved, completing an overall younger silhouette.</li>
+<li><strong>Wrinkle Reduction:</strong> From fine lines around the eyes to deep nasolabial and marionette lines, dermal thickness is reinforced to soften wrinkles naturally.</li>
+<li><strong>Skin Firmness & Density:</strong> Dermal collagen regeneration fills the skin from within, restoring firmness and resilience.</li>
+<li><strong>Facial Contouring:</strong> Sagging areas are lifted, creating a smaller, more defined three-dimensional facial contour.</li>
+</ul>
+
+<h2>Shot Count Guide</h2>
+<ul>
+<li><strong>100 shots:</strong> Targeted improvement of fine lines in localized areas such as the eye area and around the mouth</li>
+<li><strong>300 shots:</strong> Overall facial elasticity restoration and lifting — the most common standard shot count</li>
+<li><strong>600 shots:</strong> Comprehensive lifting covering the full face and neck — more shots mean higher density and longer-lasting results</li>
+</ul>
+
+<h2>Recommended For</h2>
+<ul>
+<li>Those wishing to redefine a sagging jawline or double chin into a clear V-line</li>
+<li>Those seeking improvement of forehead/brow droop, fine eye lines, nasolabial/marionette lines, and neck wrinkles</li>
+<li>Those wanting improved firmness and wrinkle reduction along the décolleté</li>
+<li>Those who hesitated with the original Ulthera due to its characteristic pain</li>
+<li>Those who didn't achieve expected results from the original Ulthera</li>
+<li>Those with thick skin or abundant fat layers requiring powerful SMAS-level energy delivery</li>
+<li>Those with thin or sensitive skin concerned about side effects (benefits from precise 8mm imaging)</li>
+<li>Those in their late 30s to early 60s experiencing significant sagging</li>
+<li>Those with important events (weddings, etc.) 3–6 months away — results peak during this window</li>
+<li>Busy professionals seeking fast treatments with minimal downtime</li>
+</ul>
+
+<h2>Treatment Process</h2>
+<ol>
+<li><strong>Step 1 — Consultation & Diagnosis:</strong> A specialist assesses the degree of sagging, fat layer thickness, and lifting goals to design the appropriate shot count and energy settings.</li>
+<li><strong>Step 2 — Authenticity Verification:</strong> Patients directly verify device and transducer authenticity through the Touch PRIME app.</li>
+<li><strong>Step 3 — Anesthesia:</strong> Choose from numbing cream, local injection, laughing gas, or sleep sedation based on pain sensitivity.</li>
+<li><strong>Step 4 — DeepSee™ Mapping:</strong> Real-time ultrasound imaging is used to map skin layers, nerves, and blood vessels for precise treatment planning.</li>
+<li><strong>Step 5 — Treatment:</strong> Energy is delivered layer by layer — dermis (1.5mm, 3.0mm) and SMAS fascia (4.5mm) — according to the customized plan.</li>
+<li><strong>Step 6 — Post-Treatment Care:</strong> Cooling and soothing care is provided along with detailed aftercare instructions.</li>
+</ol>
+
+<h2>Frequently Asked Questions</h2>
+
+<details>
+<summary>How is this different from the original Ulthera?</summary>
+<div class="answer"><p>Ultherapy PRIME is a next-generation device upgraded after 9 years. Treatment speed is over 25% faster, the DeepSee™ real-time imaging screen is 35% larger with viewing depth extended to 8mm, and precision is dramatically improved. Energy output stabilization technology also significantly reduces the characteristic sting of the original Ulthera, making the treatment noticeably more comfortable.</p></div>
+</details>
+
+<details>
+<summary>When will I see results and how long do they last?</summary>
+<div class="answer"><p>You will feel immediate tightening right after the treatment, with full lifting effects becoming visibly pronounced 2–3 months later as collagen regenerates, peaking at around 6 months. Duration varies by individual and shot count but typically lasts 6 months to 1 year — with some studies reporting up to 18–24 months of sustained results.</p></div>
+</details>
+
+<details>
+<summary>How much does it hurt? Are there anesthesia options?</summary>
+<div class="answer"><p>While the original Ulthera's pain was approximately 7–8 out of 10, PRIME has reduced this to around 4–5. Depending on pain sensitivity, you can choose from various options including numbing cream, local injection, laughing gas, or sleep sedation for a much more comfortable experience.</p></div>
+</details>
+
+<details>
+<summary>How much swelling is there? What's the downtime?</summary>
+<div class="answer"><p>Post-treatment swelling is a normal healing response during tissue regeneration and typically resolves within 3–7 days. Downtime is minimal — you can return to daily activities the same day, and light makeup is usually possible from the next day.</p></div>
+</details>
+
+<details>
+<summary>How is my shot count determined?</summary>
+<div class="answer"><p>Shot count is determined by the degree of elasticity loss and treatment area rather than face size. Generally, 100 shots for localized areas like eyes and mouth, 300 shots for overall facial elasticity restoration, and 600 shots for comprehensive face and neck lifting. Higher shot counts tend to provide longer-lasting results due to greater density, and the exact count is personalized during consultation.</p></div>
+</details>
+
+<details>
+<summary>Are there any side effect risks?</summary>
+<div class="answer"><p>Because DeepSee™ real-time imaging allows the practitioner to precisely identify nerves and blood vessels during treatment, energy is delivered only to the target layer, minimizing risks of fat loss (hollowing), burns, or nerve damage. PRIME's expanded 8mm viewing depth makes it particularly safe even for thin or sensitive skin.</p></div>
+</details>
+
+<details>
+<summary>How can I verify the device is genuine?</summary>
+<div class="answer"><p>Verifying authentic devices and transducers is critical for such a premium treatment. Patients can directly verify both the device and transducer authenticity before treatment using the <strong>Touch PRIME</strong> mobile app, and the official Merz Korea website lists certified participating clinics that can be checked in advance.</p></div>
+</details>
+
+<details>
+<summary>Can it be combined with other lifting treatments?</summary>
+<div class="answer"><p>Yes — the most popular combination is <strong>"Ulthemage" (Ultherapy + Thermage FLX)</strong>. While Ultherapy PRIME targets the deep SMAS fascia, Thermage FLX enhances firmness in the upper dermis and epidermis, complementing each other to maximize lifting and elasticity results. Combinations with thread lifting, InMode, and skin boosters are also possible — a customized plan will be designed during consultation.</p></div>
+</details>
+
+<details>
+<summary>I have a wedding coming up — when should I get the treatment?</summary>
+<div class="answer"><p>Since Ultherapy PRIME's effects become pronounced 2–3 months after treatment and peak around 6 months, we recommend scheduling your treatment <strong>3–6 months before</strong> important events like weddings. While downtime is minimal, allowing sufficient time for collagen regeneration ensures the most dramatic lifting results on your special day.</p></div>
+</details>
+
+<h2>Pre & Post Treatment Care</h2>
+
+<h3>1. Immediate Post-Treatment Responses (Normal)</h3>
+<ul>
+<li><strong>Redness/Warmth:</strong> Treatment areas may temporarily appear red or feel warm; this typically subsides within a few hours.</li>
+<li><strong>Swelling:</strong> A normal response during tissue regeneration, usually resolving within 3–7 days.</li>
+<li><strong>Mild Soreness:</strong> Temporary soreness may be felt after energy delivery to the fascia layer, resolving within 1–2 weeks.</li>
+</ul>
+
+<h3>2. Cleansing and Makeup</h3>
+<ul>
+<li><strong>Same-Day Cleansing:</strong> Gentle cleansing with lukewarm water is possible from the treatment day.</li>
+<li><strong>Makeup:</strong> Allowed from the next day. Avoid harsh cleansers or scrubs for 2–3 days.</li>
+</ul>
+
+<h3>3. Lifestyle and Environment</h3>
+<ul>
+<li><strong>Avoid Heat:</strong> Skip saunas, steam rooms, and hot baths for 1–2 weeks — heat can affect the regeneration process.</li>
+<li><strong>Sun Protection:</strong> Apply SPF 30+ sunscreen thoroughly to protect regenerating skin.</li>
+<li><strong>Avoid Harsh Massage:</strong> Do not vigorously rub or press the treated area for 2 weeks.</li>
+</ul>
+
+<h3>4. Alcohol, Smoking & Medications</h3>
+<p>Abstain from alcohol and smoking for at least 3–5 days after treatment. If you are taking blood thinners (such as aspirin) or are pregnant or breastfeeding, please inform the medical team in advance.</p>
+
+<h3>5. Moisture and Collagen Regeneration Care</h3>
+<p>Skin may feel drier than usual after treatment. Apply moisturizing and regenerative creams generously, and increasing protein intake can support collagen regeneration. Collagen renewal is most active between 1–3 months post-treatment, so consistent care during this window is important.</p>`, price: '' }
             }
         },
         contact: {
@@ -4397,7 +4689,153 @@ export const translations = {
 <details>
 <summary>何回の施術を推奨されますか？</summary>
 <div class="answer"><p>1回の施術でも十分に効果を実感いただけますが、肌状態・年齢・目標に応じて3〜6ヶ月間隔で2〜3回施術していただくと、再生効果が累積してより深く長く持続します。初診カウンセリング時に肌診断と共に、お客様に合わせた施術プランを設計いたします。</p></div>
-</details>`, price: '' }
+</details>`, price: '' },
+                24: { title: 'ウルセラピー プライム', desc: `<div style="background:linear-gradient(135deg,#f5f3ff 0%,#ede9fe 100%);border-radius:20px;padding:1.5rem 1.75rem;margin-bottom:0.25rem;"><p style="margin:0;font-size:0.95rem;color:#4c1d95;line-height:1.9;font-weight:500;">9年ぶりにアップグレードされたウルセラの次世代HIFUリフティング機器。既存の強力なSMASリフティング効果はそのままに、施術スピード・痛み・精密度までも大幅に改善したプレミアム非手術リフティング施術です。</p></div>
+
+<h2>施術原理</h2>
+<p>ウルセラピー プライムは<strong>HIFU（高密度焦点式超音波）</strong>技術に基づいています。虫眼鏡で太陽光を集めるように、超音波エネルギーを皮膚の深部に精密に集中させて<strong>60〜70度の最適な熱凝固点</strong>を形成することが核心です。専用チップで<strong>真皮層（1.5mm・3.0mm）</strong>から肌の基礎工事を担う<strong>筋膜層（SMAS、4.5mm）</strong>までエネルギーを正確に届け、組織の収縮と再生を同時に誘導します。伝えられた熱エネルギーは老化したコラーゲンを変性させ、体の自然な治癒反応により新しいコラーゲンとエラスチンの生成を促進します。</p>
+
+<h2>コア技術特長</h2>
+<ul>
+<li><strong>DeepSee™ リアルタイム映像技術：</strong>施術者が患者様の肌構造、脂肪層、神経、血管をリアルタイム超音波映像で確認しながら施術します。プライムバージョンは画面が従来比35%大きく、最大8mmの深さまで観察可能で、個人別の肌状態に最適化されたオーダーメイド施術を実現します。</li>
+<li><strong>精密エネルギーターゲティング：</strong>真皮層とSMAS筋膜層に正確にエネルギーを集中させ、周辺組織を傷つけることなく最も効果的な深さでコラーゲン再生反応を誘導します。</li>
+<li><strong>エネルギー出力の安定化：</strong>次世代技術でエネルギー伝達が均一になり、既存ウルセラ特有のチクッとした痛みが有意に減少し、施術効果の一貫性も向上しました。</li>
+<li><strong>施術時間短縮：</strong>従来比で施術速度が25%以上向上し、同じショット数基準でベッドに横になる時間が大幅に短縮されました。</li>
+<li><strong>非手術SMASリフティング：</strong>手術でしか到達できなかった筋膜層まで到達する唯一の非手術機器で、外科的フェイスリフトに近いリフティング効果を実現します。</li>
+</ul>
+
+<h2>従来のウルセラとの違い</h2>
+<ul>
+<li><strong>施術速度25%向上：</strong>9年ぶりにアップグレードされた次世代機器で施術時間が短縮され、患者様の負担が軽減されました。</li>
+<li><strong>映像画面35%拡大+観察深度8mm：</strong>DeepSee™技術の強化により、より広い画面と深い観察が可能となり精密度が大幅に向上しました。</li>
+<li><strong>痛み約半減：</strong>10点満点で従来7〜8点レベルの痛みが4〜5点レベルに改善され、痛みに敏感な方でも快適に施術を受けられます。</li>
+<li><strong>正規品認証システム強化：</strong>患者様がスマートフォンアプリ（Touch PRIME）で機器の正規品認証を直接行うことができ、信頼性が高まりました。</li>
+</ul>
+
+<h2>施術情報</h2>
+<ul>
+<li><strong>施術時間：</strong>ショット数により約20〜60分（従来比25%短縮）</li>
+<li><strong>麻酔：</strong>麻酔クリーム、局所麻酔注射、笑気ガス、睡眠麻酔など痛みの感度に合わせて選択可能</li>
+<li><strong>ダウンタイム：</strong>ほぼなし（施術当日から日常復帰可能）</li>
+<li><strong>効果発現：</strong>施術直後から即座のタイトニング実感 / 本格的なリフティング効果は2〜3ヶ月後から明確 / 6ヶ月目に頂点</li>
+<li><strong>持続期間：</strong>一般的に6ヶ月〜1年（一部研究では18〜24ヶ月）/ ショット数が多いほど持続期間延長</li>
+</ul>
+
+<h2>主な効果</h2>
+<ul>
+<li><strong>おでこ・眉リフティング：</strong>下垂したおでこと眉が自然に上がり、目元がくっきりして若々しい印象に変わります。</li>
+<li><strong>フェイスライン・二重あご改善：</strong>崩れたフェイスラインが整い、くっきりとしたVラインに変化し、二重あごのお悩みが緩和されます。</li>
+<li><strong>首元・デコルテライン改善：</strong>首のしわと胸上部の下垂・しわが改善され、全体的に若々しいシルエットが完成します。</li>
+<li><strong>しわ緩和：</strong>目元の小じわからほうれい線、マリオネットラインまで表情じわから深いしわまで、真皮の厚み強化で自然に軽減されます。</li>
+<li><strong>肌のハリ・密度：</strong>真皮層でコラーゲンが再生され、肌が内側からふっくらと満たされ、ハリが蘇ります。</li>
+<li><strong>顔の輪郭：</strong>下垂した部位が引き上げられ、顔が小さく見え、全体的に立体的な輪郭が完成します。</li>
+</ul>
+
+<h2>ショット数ガイド</h2>
+<ul>
+<li><strong>100ショット：</strong>目元・口元など局所部位の小じわ集中改善</li>
+<li><strong>300ショット：</strong>お顔全体の全般的なハリ回復とリフティング — 最も一般的な基本ショット数</li>
+<li><strong>600ショット：</strong>お顔と首を含む広範囲の複合リフティング — ショット数が多いほど照射密度が高まり持続期間が長くなります。</li>
+</ul>
+
+<h2>このような方におすすめ</h2>
+<ul>
+<li>下垂したフェイスラインと二重あごをVラインに整えたい方</li>
+<li>おでこ・眉の下垂、目元の小じわ、ほうれい線・マリオネットライン、首のしわ改善をご希望の方</li>
+<li>デコルテ（胸上部）ラインのしわとハリ改善をご希望の方</li>
+<li>既存ウルセラのチクッとした痛みで施術を躊躇されていた方</li>
+<li>既存ウルセラで期待した効果を得られなかった方</li>
+<li>脂肪層が厚くSMAS筋膜層まで強力なエネルギー伝達が必要な方</li>
+<li>肌が薄く敏感で副作用が心配だった方（精密8mm観察で安全性向上）</li>
+<li>30代後半〜60代前半で本格的な下垂が始まった方</li>
+<li>結婚式など重要なイベントを3〜6ヶ月前に控えた方（施術3〜6ヶ月後に効果頂点）</li>
+<li>ダウンタイムなく短時間で施術をお受けになりたい忙しい方</li>
+</ul>
+
+<h2>施術の流れ</h2>
+<ol>
+<li><strong>ステップ1 — カウンセリング&診断：</strong>専門医が肌の下垂程度、脂肪層の厚み、リフティング目標部位を確認し、ショット数とエネルギーを設計します。</li>
+<li><strong>ステップ2 — 正規品認証：</strong>患者様がTouch PRIMEアプリで機器とチップの正規品かどうかをご自身で確認します。</li>
+<li><strong>ステップ3 — 麻酔：</strong>痛みの感度に応じて麻酔クリーム、局所麻酔、笑気ガス、睡眠麻酔の中から選択します。</li>
+<li><strong>ステップ4 — DeepSee™ 映像分析：</strong>リアルタイム超音波映像で肌層・神経・血管を確認しながら施術部位を精密にマッピングします。</li>
+<li><strong>ステップ5 — 施術：</strong>真皮層（1.5mm、3.0mm）からSMAS筋膜層（4.5mm）まで部位別にエネルギーを照射します。</li>
+<li><strong>ステップ6 — アフターケア：</strong>施術後のクールダウンと鎮静ケアを行い、ホームケアの注意事項をご案内します。</li>
+</ol>
+
+<h2>よくあるご質問 FAQ</h2>
+
+<details>
+<summary>従来のウルセラと何が違いますか？</summary>
+<div class="answer"><p>ウルセラピー プライムは約9年ぶりにアップグレードされた次世代機器です。施術速度が従来比25%以上向上し、DeepSee™リアルタイム映像画面が35%大きくなり観察深度も最大8mmまで拡張され、精密度が大幅に向上しました。またエネルギー出力安定化技術により、従来ウルセラ特有のチクッとした痛みが有意に減少し、より快適に施術をお受けいただけます。</p></div>
+</details>
+
+<details>
+<summary>効果はいつから現れ、どのくらい持続しますか？</summary>
+<div class="answer"><p>施術直後から即座のタイトニングを感じていただけますが、本格的なリフティング効果はコラーゲンが再生される2〜3ヶ月後から明確に現れ、6ヶ月目に頂点に達します。持続期間は個人差とショット数によって異なりますが、通常6ヶ月〜1年ほどで、一部研究では18〜24ヶ月まで持続すると報告されています。</p></div>
+</details>
+
+<details>
+<summary>痛みはどの程度ですか？麻酔オプションはありますか？</summary>
+<div class="answer"><p>従来ウルセラの痛みが10点満点で約7〜8点レベルだったとすれば、プライムは4〜5点レベルに改善されました。痛みの感度に応じて麻酔クリーム、局所麻酔注射、笑気ガス、睡眠麻酔など様々なオプションを選択でき、快適に施術をお受けいただけます。</p></div>
+</details>
+
+<details>
+<summary>腫れとダウンタイムはどの程度ですか？</summary>
+<div class="answer"><p>施術後の腫れは組織再生過程で発生する正常な治癒反応で、通常3〜7日以内に自然に落ち着きます。ダウンタイムはほぼなく、施術当日から日常生活に支障はありません。軽いメイクも翌日から可能です。</p></div>
+</details>
+
+<details>
+<summary>自分に合ったショット数はどう決まりますか？</summary>
+<div class="answer"><p>ショット数は顔の大きさよりもハリの低下程度と施術部位によって決まります。一般的に目元・口元など局所部位は100ショット、お顔全体のハリ回復は300ショット、お顔と首を含む複合リフティングは600ショットが推奨されます。ショット数が多いほど照射密度が高まり持続期間が長くなる傾向があり、正確なショット数は初診カウンセリングで医師が肌状態を見て設計します。</p></div>
+</details>
+
+<details>
+<summary>副作用のリスクはありませんか？</summary>
+<div class="answer"><p>DeepSee™リアルタイム映像で神経線と血管の位置を正確に把握しながら施術するため、ターゲット層にのみ正確にエネルギーを伝達でき、頬のくぼみや火傷、神経損傷などの副作用リスクが最小化されます。特にプライムは観察深度が8mmまで拡張されており、薄く敏感な肌にも安全に施術できます。</p></div>
+</details>
+
+<details>
+<summary>正規品かどうかどう確認しますか？</summary>
+<div class="answer"><p>高価な施術である分、正規品機器とチップの使用有無の確認が非常に重要です。患者様がスマートフォンで<strong>Touch PRIME</strong>アプリから機器とチップの正規品かどうかを施術前にご自身で認証でき、メルツコリア公式ホームページで正規認証参加病院かどうかも事前に確認できます。</p></div>
+</details>
+
+<details>
+<summary>他のリフティング施術と併用できますか？</summary>
+<div class="answer"><p>はい、最も一般的な組み合わせは<strong>ウルサーマジ（ウルセラピー+サーマジFLX）</strong>です。ウルセラピー プライムが肌の深部SMAS筋膜層をターゲットするなら、サーマジFLXは表皮〜真皮上部のハリを改善し、互いに補完的に作用してリフティングとハリ効果が最大化されます。糸リフティング、インモード、スキンブースターとも併用可能で、カウンセリング時にオーダーメイドプランをご案内します。</p></div>
+</details>
+
+<details>
+<summary>結婚式を控えていますが、いつ施術を受けるのが良いですか？</summary>
+<div class="answer"><p>ウルセラピー プライムは施術2〜3ヶ月後から効果が明確になり6ヶ月目に頂点に達するため、結婚式など重要なイベントを控えていらっしゃる場合は<strong>3〜6ヶ月前の施術</strong>を推奨いたします。ダウンタイムがほぼなく施術直後から日常復帰が早いですが、最高のリフティング効果をお見せするためにはコラーゲン再生時間を十分に確保されることをおすすめします。</p></div>
+</details>
+
+<h2>施術前後の注意事項</h2>
+
+<h3>1. 施術直後の反応（正常な現象）</h3>
+<ul>
+<li><strong>赤み・熱感：</strong>施術部位が一時的に赤くなったり温かく感じることがありますが、大部分は数時間以内に落ち着きます。</li>
+<li><strong>腫れ：</strong>組織再生過程で発生する正常な反応で、3〜7日以内に自然に緩和されます。</li>
+<li><strong>わずかなこわばり：</strong>筋膜層にエネルギーが伝達された後、一時的にこわばった感じがある場合がありますが、1〜2週間以内に消えます。</li>
+</ul>
+
+<h3>2. 洗顔とメイク</h3>
+<ul>
+<li><strong>当日洗顔：</strong>施術当日からぬるま湯での軽い洗顔が可能です。</li>
+<li><strong>メイク：</strong>翌日から可能です。強いクレンジングやスクラブは2〜3日お控えください。</li>
+</ul>
+
+<h3>3. 生活と環境管理</h3>
+<ul>
+<li><strong>熱刺激注意：</strong>施術後1〜2週間はサウナ、岩盤浴、熱いお風呂をお控えください。熱が再生過程に影響を与える可能性があります。</li>
+<li><strong>紫外線対策：</strong>再生中の肌を保護するためSPF30以上の日焼け止めをしっかり塗ってください。</li>
+<li><strong>強いマッサージ禁止：</strong>施術部位を強くこすったり押すマッサージは2週間お控えください。</li>
+</ul>
+
+<h3>4. 禁酒・禁煙と服用注意</h3>
+<p>施術後最低3〜5日間はアルコールと喫煙をお控えください。血液をさらさらにする薬（アスピリンなど）を服用中の方や妊娠・授乳中の方は必ず事前に医療スタッフにお知らせください。</p>
+
+<h3>5. 保湿とコラーゲン再生ケア</h3>
+<p>施術後は肌がいつもより乾燥を感じることがあります。水分クリームと再生クリームを十分にご使用いただき、たんぱく質の摂取量を増やすとコラーゲン再生に役立ちます。施術後1〜3ヶ月の間がコラーゲンが最も活発に再生される時期なので、継続的なケアが重要です。</p>`, price: '' }
             }
         },
         contact: {
